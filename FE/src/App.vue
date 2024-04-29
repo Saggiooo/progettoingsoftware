@@ -1,15 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import A from './components/StatisticheGenerali.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <A msg="testo non visibile, A importato correttamente" />
     </div>
   </header>
-
-  <main>
-    <TheWelcome />
-  </main>
 </template>

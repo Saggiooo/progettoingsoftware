@@ -60,7 +60,7 @@ h3 {
 
   .item:before {
     content: ' ';
-    border-left: 1px solid var(--color-border);
+    border-left: 5px solid var(--color-border);
     position: absolute;
     left: 0;
     bottom: calc(50% + 25px);
@@ -69,7 +69,7 @@ h3 {
 
   .item:after {
     content: ' ';
-    border-left: 1px solid var(--color-border);
+    border-left: 5px solid var(--color-border);
     position: absolute;
     left: 0;
     top: calc(50% + 25px);

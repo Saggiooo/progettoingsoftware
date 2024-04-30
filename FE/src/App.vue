@@ -1,11 +1,14 @@
-<script setup lang="ts">
-import A from './components/StatisticheGenerali.vue'
-</script>
-
 <template>
-  <header>
-    <div class="wrapper">
-      <A msg="testo non visibile, A importato correttamente" />
-    </div>
-  </header>
+  <div id="app">
+    <header>
+      <div class="wrapper">
+        <!-- Includi il router-view qui -->
+        <router-view></router-view>
+      </div>
+    </header>
+  </div>
 </template>
+
+<script setup lang="ts">
+import StatisticheGenerali from './components/StatGenerali.vue'
+</script>

@@ -6,6 +6,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none; /* Rimuove l'effetto di sottolineatura */
+    color: #000; /* Specifica il colore del testo dei link (nero) */
+}
+
 :root
 {
     --sfondosidebar: #1a1a1a;
@@ -20,7 +25,16 @@
     background: var(--sfondo);
     position: relative;
     width: 100%;
+    overflow-x: hidden; /* Nasconde l'overflow orizzontale */
+    overflow-y: hidden; /* Nasconde l'overflow verticale */
 }
+
+.contenutopagina{
+    margin-left: 300px;
+    height: 100vh;
+}
+
+
 
 /* SIDEBAR - inizio */
 .sidebar {
@@ -31,6 +45,7 @@
     border-left: 10px solid var(--sfondosidebar);
     transition: 0.5s;
     overflow: hidden;
+    z-index: 5;
 }
 
 .sidebar ul {
@@ -75,6 +90,10 @@
     padding-left: 20px;
     height: 25px;
     text-align: center;
+}
+/* Cambio il colore dell'icona da Bianca a Nera quando passo su un elemento della sidebar */
+.sidebar ul li:hover .icona {
+    filter: invert(100%);
 }
 
 .sidebar ul li a .title{
@@ -123,50 +142,15 @@
     width: 170px;
 }
 
-
-/*
-.sidebar li {
-    padding: 15px 20px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    font-size: 0.82em;
-    background-color: #333;
-    display: flex; 
-    align-items: center;
-}
-.sidebar li:last-child {
-    border-bottom: none;
-}
-.sidebar li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-.sidebar li:hover {
-    background-color: #595959;
-}
-.sidebar li.active {
-    background-color: #646464;
-    padding: 20px 20px;
-}
-.icona{
-    width: 16px; 
-    height: 16px;
-    margin-right: 10px;
-    vertical-align: middle;
-}*/
-
 /* SIDEBAR - fine */
 
 
-.contenutopagina{
-    margin-left: 300px;
-}
 
+/* CARDBOX - inizio */
 
 .cardbox{
     position: relative;
-    width: 100%;
+    width: 95%;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -182,7 +166,14 @@
     justify-content: space-between;
     cursor: pointer;
     box-shadow: 0 7px 25px rgb(192, 192, 192);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.cardbox .card:hover {
+    box-shadow: 0 10px 30px rgba(192, 192, 192); 
+    transform: translateY(-5px); 
+}
+
 
 .cardbox .card .numbers{
     position: relative;
@@ -196,24 +187,36 @@
     filter: invert(100%);
     width: 30px;
    
-  }
+}
 
-/* Grafico */
+/* CARDBOX - fine */
+
+
+
+/* GRAFICI - inizio */
 
 .graphBox{
     position: relative;
-    width: 100%;
+    width: 98%;
     padding: 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
     height: 200px;
 }
 
 .graphBox .box{
     position: relative;
+    display: flex;
     padding: 20px;
-    width: 50%;
-    box-shadow: 0 7px 25px #1a1a1a;
+    width: 86%;
+    box-shadow: 0 7px 25px rgb(192, 192, 192);
     border-radius: 20px;
+    background: white;
 }
+
+.graficoUno{
+    min-width: 360px;
+}
+
+/* GRAFICI - fine */

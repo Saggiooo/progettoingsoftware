@@ -1,13 +1,12 @@
 <!-- ParentComponent.vue -->
 <template>
     <div>
-      <StatGenerali />
+      <Impostazioni />
     </div>
   </template>
   
   <script setup lang="ts">
-  import StatGenerali from '@/components/StatGenerali.vue';
+  import Impostazioni from '@/components/Impostazioni.vue';
   </script>
   
   <router-view></router-view>
-  

@@ -2,7 +2,6 @@
   <div id="app">
     <header>
       <div class="wrapper">
-        <!-- Includi il router-view qui -->
         <router-view></router-view>
       </div>
     </header>

@@ -1,13 +1,12 @@
 <!-- ParentComponent.vue -->
 <template>
     <div>
-      <StatGenerali />
+      <InfoClienti />
     </div>
   </template>
   
   <script setup lang="ts">
-  import StatGenerali from '@/components/StatGenerali.vue';
+  import InfoClienti from '@/components/InformazioniClienti.vue';
   </script>
   
   <router-view></router-view>
-  

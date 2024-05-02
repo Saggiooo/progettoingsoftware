@@ -1,13 +1,12 @@
 <!-- ParentComponent.vue -->
 <template>
     <div>
-      <StatGenerali />
+      <GestioneAd />
     </div>
   </template>
   
   <script setup lang="ts">
-  import StatGenerali from '@/components/StatGenerali.vue';
+  import GestioneAd from '@/components/GestioneAd.vue';
   </script>
   
   <router-view></router-view>
-  

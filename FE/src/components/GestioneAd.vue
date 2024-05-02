@@ -8,9 +8,9 @@
         <div class="contenutopagina">
         <!-- Inizio del contenuto della pagina-->
             <!-- Inserisco l'intestazione "Nav.vue"-->
-             <div>
+            <div>
                 <Nav/>
-             </div>
+            </div>
     
         <!-- fine del contenuto della pagina-->
         </div>
@@ -24,4 +24,5 @@
     
     <script setup lang="ts">
     import Sidebar from './Sidebar.vue';
+    import Nav from './Nav.vue';
     </script>

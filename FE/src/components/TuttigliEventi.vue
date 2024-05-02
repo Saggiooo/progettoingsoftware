@@ -5,7 +5,7 @@
             <Sidebar/>
     </div>
     <!-- fine "Sidebar.vue" -->
-
+    
     <div class="ContainerEventi">
         <nav>
             <!-- "Nav.vue" -->

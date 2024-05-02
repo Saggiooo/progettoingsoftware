@@ -6,7 +6,7 @@
   </template>
   
   <script setup lang="ts">
-  import StatGenerali from '/Users/simone/Documents/Università/Ing. Software/progettoingsoftware/FE/src/components/StatGenerali.vue';
+  import StatGenerali from '/src/components/StatGenerali.vue';
   </script>
   
   <router-view></router-view>

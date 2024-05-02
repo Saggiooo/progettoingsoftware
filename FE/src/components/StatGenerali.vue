@@ -48,6 +48,12 @@
                 </div>
             </div>
         </div>
+
+        <div class="graphBox">
+            <div class="box">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
     </div>
 </div>
     <!-- fine "Sidebar.vue" -->
@@ -192,6 +198,8 @@ const data = {
     datasets: [{
         label: 'Il mio dataset',
         backgroundColor: '#1786FF', // bianco con opacità del 50%
+        //backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#8A2BE2', '#FF7F50', '#20B2AA', '#9370DB', '#FFD700', '#32CD32', '#4682B4', '#BA55D3', '#FFA07A'], // Cambia i colori dei segmenti del grafico a torta
+        borderColor: '#fff',
         borderColor: '#1786FF', // blu
         borderWidth: 2,
         data: [0, 10, 5, 6, 20, 30, 45],

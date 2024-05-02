@@ -24,12 +24,7 @@
 
 
 <style>
-     body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-   
+   /*
     .ContainerEventi{
     margin-left: 270px;
     padding: 20px;
@@ -55,11 +50,11 @@
     grid-area: box2;
     border-radius:var(--main-radius);
     }
+    */
 </style>
 
 <script setup lang="ts">
 
 import Sidebar from './Sidebar.vue';
 import Nav from './Nav.vue';
-
 </script>

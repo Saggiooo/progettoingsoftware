@@ -1,7 +1,7 @@
 <template>
      <div>
-             <h1>Statistiche Generali</h1>
-            </div>
+        <h1 id="testoVariabile"></h1>
+    </div>
             <div class="user-info">
                 <div>
                     <p>Filippo Fontana</p>
@@ -36,3 +36,30 @@
     color: #BC6F35;
 }
 </style>
+
+<script>
+ // Ottieni l'URL della pagina corrente
+ var urlPagina = window.location.pathname;
+
+// Variabile JavaScript per il testo in base all'URL della pagina
+var testo;
+
+// Verifica l'URL della pagina e imposta il testo di conseguenza
+if (urlPagina === "/") {
+    testo = "Statistiche Generali";
+} else if (urlPagina === "/eventi") {
+    testo = "Tutti gli Eventi";
+} else {
+    // Pagina sconosciuta, impostare un testo predefinito
+    testo = "Pagina sconosciuta";
+}
+
+// Aspetta che il DOM sia caricato prima di eseguire il codice JavaScript
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleziona l'elemento HTML (h1) in cui inserire il testo
+    var elementoTesto = document.getElementById("testoVariabile");
+
+    // Assegna il testo alla proprietà innerHTML dell'elemento
+    elementoTesto.innerHTML = testo;
+});
+</script>

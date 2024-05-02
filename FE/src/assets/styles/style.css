@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root
+{
+    --sfondosidebar: #1a1a1a;
+    --main-radius:20px;
+    --main-padding:5px;
+    --sfondo: #F2F2F2;
+}
+
+
+.fullpage{
+    z-index: 0;
+    background: var(--sfondo);
+    position: relative;
+    width: 100%;
+}
+
+/* SIDEBAR - inizio */
+.sidebar {
+    width: 300px;
+    height: 100%;
+    background: var(--sfondosidebar);
+    position: fixed;
+    border-left: 10px solid var(--sfondosidebar);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.sidebar ul {
+    left: 0;
+    top: 100px;
+    width: 100%;
+    position: absolute;
+}
+
+.sidebar ul li{
+    position: relative;
+    width: 200%;
+    list-style: none;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+}
+
+.sidebar ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.sidebar ul li:hover a{
+    color: var(--sfondosidebar);
+}
+
+.sidebar ul li:hover{
+    background: var(--sfondo);
+}
+
+.sidebar ul li a .icona{
+    position: relative;
+    display: block;
+    min-width: 25px;
+    padding-top: 18px;
+    padding-left: 20px;
+    height: 25px;
+    text-align: center;
+}
+
+.sidebar ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: normal;
+}
+
+.sidebar ul li:hover a::before {
+    content: '';
+    position: absolute;
+    right: 50%; /* Posizionamento rispetto al bordo destro dell'elemento padre */
+    bottom: -40%; /* Posizionamento rispetto al fondo dell'elemento padre */
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--sfondo);
+    pointer-events: none;
+    transform: translateY(50%); /* Per centrare verticalmente il cerchio */
+}
+.sidebar ul li:hover a::after {
+    content: '';
+    position: absolute;
+    right: 50%; /* Posizionamento rispetto al bordo destro dell'elemento padre */
+    bottom: 140%; /* Posizionamento rispetto al fondo dell'elemento padre */
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--sfondo);
+    pointer-events: none;
+    transform: translateY(50%); /* Per centrare verticalmente il cerchio */
+}
+
+
+.logo{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 170px;
+}
+
+
+/*
+.sidebar li {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 0.82em;
+    background-color: #333;
+    display: flex; 
+    align-items: center;
+}
+.sidebar li:last-child {
+    border-bottom: none;
+}
+.sidebar li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.sidebar li:hover {
+    background-color: #595959;
+}
+.sidebar li.active {
+    background-color: #646464;
+    padding: 20px 20px;
+}
+.icona{
+    width: 16px; 
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}*/
+
+/* SIDEBAR - fine */
+
+
+.contenutopagina{
+    margin-left: 300px;
+}
+
+
+.cardbox{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+}
+
+.cardbox .card{
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgb(192, 192, 192);
+}
+
+.cardbox .card .numbers{
+    position: relative;
+    font-weight: 800;
+    font-size: 2em;
+    color: var(--sfondosidebar);
+
+}
+
+.iconCard {
+    filter: invert(100%);
+    width: 30px;
+   
+  }

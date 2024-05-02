@@ -1,21 +1,66 @@
 <template>
-    <div class="fullpage">
+<div class="fullpage">
     <!-- "Sidebar.vue" -->
     <div>
             <Sidebar/>
     </div>
-    <!-- fine "Sidebar.vue" -->
 
+
+    <div class="contenutopagina">
+        <div class="cardbox">
+             <div class="card">
+                <div>
+                    <div class="numbers">1500</div>
+                    <div class="cardName">Partecipanti</div>
+                </div>
+                <div class="iconBx">
+                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+                </div>
+            </div>
+    
+             <div class="card">
+                <div>
+                    <div class="numbers">3238</div>
+                    <div class="cardName">Prova</div>
+                </div>
+                 <div class="iconBx">
+                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="numbers">7232</div>
+                    <div class="cardName">Test</div>
+                </div>
+                 <div class="iconBx">
+                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="numbers">912</div>
+                    <div class="cardName">Number</div>
+                </div>
+                 <div class="iconBx">
+                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- fine "Sidebar.vue" -->
+<!--
     <div class="Container">
         <nav>
-            <!-- "Nav.vue" -->
+
             <Nav/>
-            <!-- fine "Nav.vue" -->
         </nav>
         <div id="content1">
-            <div>
-            <!-- Elemento HTML per il grafico -->
-            <canvas id="myChart" width="400" height="400"></canvas>
+            <div style="position: relative; width: 100%; height: 80%;">
+            <p>Entrate dalle Vendite</p>
+            <canvas id="myChart"></canvas>
              </div>
         </div>
         <div id="content2">
@@ -36,21 +81,11 @@
         <div id="content7">
             7
         </div>
-    </div>
-    </div>
+    </div>  -->
 </template>
 
 <style>
-
-:root{
-    --main-radius:20px;
-    --main-padding:5px;
-}
-
-.fullpage{
-    background: #F2F2F2;
-}
-
+/*
 .Container{
     margin-left: 270px;
     padding: 20px;
@@ -110,6 +145,7 @@ nav{
     border-radius:var(--main-radius);
 }
 
+
 @media only screen and (max-width: 1000px){
     .Container{
         height: 200vh;
@@ -124,6 +160,7 @@ nav{
             "content7 content7"
     }
 }
+*/
 </style>
 
 
@@ -132,5 +169,48 @@ nav{
 import Sidebar from './Sidebar.vue';
 import Nav from './Nav.vue';
 
+import Chart from 'chart.js/auto';
+import { onMounted } from 'vue';
 
+const labels = [
+    'Gennaio',
+    'Febbraio',
+    'Marzo',
+    'Aprile',
+    'Maggio',
+    'Giugno',
+    'Luglio',
+    'Agosto',
+    'Settembre',
+    'Ottobre',
+    'Novembre',
+    'Dicembre'
+];
+
+const data = {
+    labels: labels,
+    datasets: [{
+        label: 'Il mio dataset',
+        backgroundColor: '#1786FF', // bianco con opacità del 50%
+        borderColor: '#1786FF', // blu
+        borderWidth: 2,
+        data: [0, 10, 5, 6, 20, 30, 45],
+    }]
+};
+
+const config = {
+    type: 'line',
+    data: data,
+    options: {}
+};
+
+
+    onMounted(() => {
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+
+        window.addEventListener('resize', () => myChart.resize());
+    })
 </script>

@@ -30,7 +30,7 @@ a {
 }
 
 .contenutopagina{
-    margin-left: 300px;
+    margin-left: 320px;
     height: 100vh;
 }
 
@@ -58,6 +58,7 @@ a {
 .sidebar ul li{
     position: relative;
     width: 200%;
+    margin-bottom: 10px;
     list-style: none;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
@@ -82,6 +83,16 @@ a {
     background: var(--sfondo);
 }
 
+.sidebar ul li.active a{
+    color: var(--sfondosidebar);
+}
+
+.sidebar ul li.active{
+    background: var(--sfondo);
+}
+
+
+
 .sidebar ul li a .icona{
     position: relative;
     display: block;
@@ -93,6 +104,10 @@ a {
 }
 /* Cambio il colore dell'icona da Bianca a Nera quando passo su un elemento della sidebar */
 .sidebar ul li:hover .icona {
+    filter: invert(100%);
+}
+
+.sidebar ul li.active .icona {
     filter: invert(100%);
 }
 
@@ -120,6 +135,34 @@ a {
     transform: translateY(50%); /* Per centrare verticalmente il cerchio */
 }
 .sidebar ul li:hover a::after {
+    content: '';
+    position: absolute;
+    right: 50%; /* Posizionamento rispetto al bordo destro dell'elemento padre */
+    bottom: 140%; /* Posizionamento rispetto al fondo dell'elemento padre */
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px 35px 0 10px var(--sfondo);
+    pointer-events: none;
+    transform: translateY(50%); /* Per centrare verticalmente il cerchio */
+}
+
+
+.sidebar ul li.active a::before {
+    content: '';
+    position: absolute;
+    right: 50%; /* Posizionamento rispetto al bordo destro dell'elemento padre */
+    bottom: -40%; /* Posizionamento rispetto al fondo dell'elemento padre */
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 35px -35px 0 10px var(--sfondo);
+    pointer-events: none;
+    transform: translateY(50%); /* Per centrare verticalmente il cerchio */
+}
+.sidebar ul li.active a::after {
     content: '';
     position: absolute;
     right: 50%; /* Posizionamento rispetto al bordo destro dell'elemento padre */

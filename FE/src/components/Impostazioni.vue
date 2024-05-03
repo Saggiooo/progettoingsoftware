@@ -24,4 +24,5 @@
     
     <script setup lang="ts">
     import Sidebar from './Sidebar.vue';
+    import Nav from './Nav.vue';
     </script>

@@ -13,6 +13,7 @@
   "dependencies": {
     "axios": "^1.6.7",
     "chart.js": "^3.9.1",
+    "v-calendar": "^3.1.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.2"
   },

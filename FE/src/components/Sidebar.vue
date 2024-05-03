@@ -1,7 +1,7 @@
 <template>
     <div class="sidebar">
     <div>
-        <img src="@/assets/img/logosocial.png" alt="Logo del Social" class="logo"></img>
+        <a href="/"><img src="@/assets/img/logosocial.png" alt="Logo del Social" class="logo"></img></a>
     </div>
     <ul>
         <li :class="{ active: isRouteActive('/dashboard-statistiche') }"><a href="/dashboard-statistiche"><img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="icona"><span class="title">Statistiche generali</span></a></li>

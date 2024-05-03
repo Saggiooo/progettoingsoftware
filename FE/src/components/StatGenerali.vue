@@ -75,6 +75,24 @@
 
 <script setup lang="ts">
 
+import axios from 'axios';
+import { ref } from 'vue';
+
+/* Inseriamo in una variabile reattiva chiamata data */
+const data1 = ref(0);
+
+/* Inseriamo nella variabile data il risultato della chiamata al backend */
+axios.get("/api/callREST").then(response => {
+ console.log(JSON.stringify(response.data))
+ data1.value = response.data
+ })
+ class MyTable{
+  "id": number;
+  "description": string;
+ }
+
+
+
 import Sidebar from './Sidebar.vue';
 import Nav from './Nav.vue';
 
@@ -146,4 +164,10 @@ const config = {
     );
         window.addEventListener('resize', () => myChart.resize());
     })
+
+import { createApp } from 'vue';
+import VCalendar from 'v-calendar';
+
+createApp().use(VCalendar);
+
 </script>

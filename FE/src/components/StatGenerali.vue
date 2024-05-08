@@ -1,95 +1,29 @@
-<template>
-<div class="fullpage">
-    <!-- Inserisco la Sidebar "Sidebar.vue" -->
-    <div>
-            <Sidebar/>
-    </div>
-
-    <div class="contenutopagina">
-    <!-- Inizio del contenuto della pagina-->
-        <!-- Inserisco l'intestazione "Nav.vue"-->
-        <div>
-            <Nav/>
-        </div>
-        <!-- Implemento i Box con i numeri -->
-        <div class="cardbox">
-            <a href="/dashboard-clienti">
-             <div class="card">
-                <div>
-                    <div class="numbers">1500</div>
-                    <div class="cardName">Partecipanti</div>
-                </div>
-                <div class="iconBx">
-                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
-                </div>
-            </div></a>
-    
-             <div class="card">
-                <div>
-                    <div class="numbers">3238</div>
-                    <div class="cardName">Prova</div>
-                </div>
-                 <div class="iconBx">
-                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <div class="numbers">7232</div>
-                    <div class="cardName">Test</div>
-                </div>
-                 <div class="iconBx">
-                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <div class="numbers">912</div>
-                    <div class="cardName">Number</div>
-                </div>
-                 <div class="iconBx">
-                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
-                </div>
-            </div>
-        </div>
-
-        <!-- Implemento un grafico -->
-        <div class="graphBox">
-            <div class="box">
-                <canvas class="graficoUno" id="myChart"></canvas>
-            </div>
-            <div class="box">
-                <canvas class="graficoUno" id="myChart2"></canvas>
-            </div>
-        </div>
-    <!-- fine del contenuto della pagina-->
-    </div>
-</div>
-</template>
-
-<style>
-</style>
-
-
 <script setup lang="ts">
+
+
+
+/* Inseriamo in una variabile reattiva chiamata data */
+
 
 import axios from 'axios';
 import { ref } from 'vue';
-
-/* Inseriamo in una variabile reattiva chiamata data */
 const data1 = ref(0);
 
-/* Inseriamo nella variabile data il risultato della chiamata al backend */
 axios.get("/api/callREST").then(response => {
- console.log(JSON.stringify(response.data))
- data1.value = response.data
- })
- class MyTable{
-  "id": number;
-  "description": string;
- }
+    console.log(response.data);
+    let data1 = response.data;
+    
+    let output = document.getElementById("myOutput");
+    
+    data1.forEach((item: MyTable) => {
+        let newText = document.createTextNode(`${item.id}`);
+        //${item.description}
+        let breakLine = document.createElement("br");
+        
+        output.appendChild(newText);
+        output.appendChild(breakLine);
+    });
+})
 
 
 
@@ -171,3 +105,82 @@ import VCalendar from 'v-calendar';
 createApp().use(VCalendar);
 
 </script>
+
+
+
+<template>
+<div class="fullpage">
+    <!-- Inserisco la Sidebar "Sidebar.vue" -->
+    <div>
+            <Sidebar/>
+    </div>
+
+    <div class="contenutopagina">
+    <!-- Inizio del contenuto della pagina-->
+        <!-- Inserisco l'intestazione "Nav.vue"-->
+        <div>
+            <Nav/>
+        </div>
+        <!-- Implemento i Box con i numeri -->
+        <div class="cardbox">
+            <a href="/dashboard-clienti">
+             <div class="card">
+                <div>
+                    <div class="numbers"><p id="myOutput"></p></div>
+                    <div class="cardName">Partecipanti</div>
+                </div>
+                <div class="iconBx">
+                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+                </div>
+            </div></a>
+    
+             <div class="card">
+                <div>
+                    <div class="numbers">AAA</div>
+                    <div class="cardName">Prova</div>
+                </div>
+                 <div class="iconBx">
+                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="numbers">7232</div>
+                    <div class="cardName">Test</div>
+                </div>
+                 <div class="iconBx">
+                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+                </div>
+            </div>
+
+            <div class="card">
+                <div>
+                    <div class="numbers">912</div>
+                    <div class="cardName">Number</div>
+                </div>
+                 <div class="iconBx">
+                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+                </div>
+            </div>
+        </div>
+
+        <!-- Implemento un grafico -->
+        <div class="graphBox">
+            <div class="box">
+                <canvas class="graficoUno" id="myChart"></canvas>
+            </div>
+            <div class="box">
+                <canvas class="graficoUno" id="myChart2"></canvas>
+            </div>
+        </div>
+        
+    <!-- fine del contenuto della pagina-->
+    </div>
+</div>
+</template>
+
+<style>
+</style>
+
+

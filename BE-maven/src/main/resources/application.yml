@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    username: root
+    password: a
+    url: jdbc:mysql://localhost:3306/dashboard
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true

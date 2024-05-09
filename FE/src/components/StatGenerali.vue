@@ -6,10 +6,10 @@
 
 
 import axios from 'axios';
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 const data1 = ref(0);
 
-axios.get("/api/callREST").then(response => {
+axios.get("/api/call").then(response => {
     console.log(response.data);
     let data1 = response.data;
     
@@ -27,13 +27,43 @@ axios.get("/api/callREST").then(response => {
 
 
 
+document.addEventListener('DOMContentLoaded', async () => {
+            const eventList = document.getElementById('eventList');
+            const eventTemplate = document.getElementById('eventTemplate');
+
+            if (!eventList || !eventTemplate) {
+                console.error('One or both of the elements are missing.');
+                return;
+            }
+
+            try {
+                const response = await axios.get('/api/callPROVA');
+                const events = response.data;
+
+                events.forEach(event => {
+                    const listItem = document.importNode(eventTemplate.content, true).querySelector('li');
+                    listItem.textContent = `${event.name} - ${event.date}`;
+                    eventList.appendChild(listItem);
+                });
+            } catch (error) {
+                console.error('Error fetching events:', error);
+            }
+        });
+
+
+
+
+
+
+
+
 import Sidebar from './Sidebar.vue';
 import Nav from './Nav.vue';
 
 import Chart from 'chart.js/auto';
 import { onMounted } from 'vue';
 
-const labels = [
+const labels1 = [
     'Gennaio',
     'Febbraio',
     'Marzo',
@@ -48,8 +78,24 @@ const labels = [
     'Dicembre'
 ];
 
+const labels2 = [
+    'Evento di benvenuto',
+    'Evento ciao',
+    'Evento estivo',
+    'Mattinata insieme',
+    'Incontro con il presidente',
+    'Sessione di cuicna',
+    'Evento',
+    'Agosto',
+    'Settembre',
+    'Lezioni di cucina',
+    'Evento al portico di Pino',
+    'Evento In compagnia'
+];
+
+
 const data = {
-    labels: labels,
+    labels: labels1,
     datasets: [{
         label: 'Il mio dataset',
         backgroundColor: '#1786FF', // bianco con opacità del 50%
@@ -61,7 +107,7 @@ const data = {
 };
 
 const data2 = {
-    labels: labels,
+    labels: labels2,
     datasets: [{
         label: 'Il mio dataset',
         backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#8A2BE2', '#FF7F50', '#20B2AA', '#9370DB', '#FFD700', '#32CD32', '#4682B4', '#BA55D3', '#FFA07A'],
@@ -104,6 +150,8 @@ import VCalendar from 'v-calendar';
 
 createApp().use(VCalendar);
 
+
+
 </script>
 
 
@@ -136,7 +184,7 @@ createApp().use(VCalendar);
     
              <div class="card">
                 <div>
-                    <div class="numbers">AAA</div>
+                    <div class="numbers">856</div>
                     <div class="cardName">Prova</div>
                 </div>
                  <div class="iconBx">
@@ -167,14 +215,24 @@ createApp().use(VCalendar);
 
         <!-- Implemento un grafico -->
         <div class="graphBox">
-            <div class="box">
+            <div class="box1">
                 <canvas class="graficoUno" id="myChart"></canvas>
             </div>
             <div class="box">
                 <canvas class="graficoUno" id="myChart2"></canvas>
+
             </div>
         </div>
-        
+        <div class="provaaa">
+            <ul id="eventList">
+        <!-- Event items will be added here -->
+    </ul>
+
+    <!-- Template for event item -->
+    <template id="eventTemplate">
+        <li></li>
+    </template>
+        </div>
     <!-- fine del contenuto della pagina-->
     </div>
 </div>

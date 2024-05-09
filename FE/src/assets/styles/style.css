@@ -14,9 +14,16 @@ a {
 :root
 {
     --sfondosidebar: #1a1a1a;
+    --coloretestosidebarhover: #1a1a1a;
     --main-radius:20px;
     --main-padding:5px;
     --sfondo: #F2F2F2;
+    --nero: #000;
+    --bianco: #fff;
+    --invert: invert(100%);
+    --coloretestibox: #1a1a1a;
+    --ombra-esterna: 0 7px 25px rgb(192, 192, 192);
+
 }
 
 
@@ -76,7 +83,7 @@ a {
 }
 
 .sidebar ul li:hover a{
-    color: var(--sfondosidebar);
+    color: var(--coloretestosidebarhover);
 }
 
 .sidebar ul li:hover{
@@ -84,7 +91,7 @@ a {
 }
 
 .sidebar ul li.active a{
-    color: var(--sfondosidebar);
+    color: var(--coloretestosidebarhover);
 }
 
 .sidebar ul li.active{
@@ -104,11 +111,11 @@ a {
 }
 /* Cambio il colore dell'icona da Bianca a Nera quando passo su un elemento della sidebar */
 .sidebar ul li:hover .icona {
-    filter: invert(100%);
+    filter: var(--invert);
 }
 
 .sidebar ul li.active .icona {
-    filter: invert(100%);
+    filter: var(--invert);
 }
 
 .sidebar ul li a .title{
@@ -203,18 +210,18 @@ a {
 
 .cardbox .card{
     position: relative;
-    background: rgb(255, 255, 255);
+    background: var(--bianco);
     padding: 30px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px rgb(192, 192, 192);
+    box-shadow: var(--ombra-esterna);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cardbox .card:hover {
-    box-shadow: 0 10px 30px rgba(192, 192, 192); 
+    box-shadow: var(--ombra-esterna); 
     transform: translateY(-5px); 
 }
 
@@ -223,16 +230,19 @@ a {
     position: relative;
     font-weight: 800;
     font-size: 2em;
-    color: var(--sfondosidebar);
+    color: var(--coloretestibox);
 
 }
 
 .iconCard {
-    filter: invert(100%);
+    filter: var(--invert);
     width: 30px;
    
 }
 
+.cardName{
+    color: var(--coloretestibox);
+}
 /* CARDBOX - fine */
 
 
@@ -254,9 +264,20 @@ a {
     display: flex;
     padding: 20px;
     width: 86%;
-    box-shadow: 0 7px 25px rgb(192, 192, 192);
+    box-shadow: var(--ombra-esterna);
     border-radius: 20px;
-    background: white;
+    background: var(--bianco);
+}
+
+.graphBox .box1{
+    max-height: 50%;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    width: 86%;
+    box-shadow: var(--ombra-esterna);
+    border-radius: 20px;
+    background: var(--bianco);
 }
 
 .graficoUno{
@@ -264,3 +285,37 @@ a {
 }
 
 /* GRAFICI - fine */
+
+.grigliaimpostazioni{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 30px;
+    height: 200px;
+}
+
+.boximpostazioni{
+    background-color: var(--bianco);
+    box-shadow: var(--ombra-esterna);
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 20px;
+}
+
+.testodelleimpostazioni {
+    color: var(--nero);
+    margin-right: 20px;
+}
+
+
+
+
+.provaaa{
+    display: flex;
+    align-items: center;
+    position: relative;
+}

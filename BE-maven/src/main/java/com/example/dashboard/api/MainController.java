@@ -1,7 +1,6 @@
 package com.example.dashboard.api;
 
 import com.example.dashboard.models.MyTable;
-import com.example.dashboard.models.Dashboard;
 import com.example.dashboard.services.MyService;
 import com.example.dashboard.services.TemplateRestConsumer;
 import org.springframework.beans.factory.annotation.Autowired;

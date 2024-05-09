@@ -19,12 +19,14 @@
 
 .titoloPagina{
     font-weight: 600;
+    color: var(--nero);
 }
 
 .user-info{
     display: flex;
     align-items: center;
     text-align: right;
+    color: var(--nero);
 }
 
 .user-info img {

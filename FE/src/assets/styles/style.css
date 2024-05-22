@@ -38,7 +38,7 @@ a {
 
 .contenutopagina{
     margin-left: 320px;
-    height: 150vh;
+    height: 200vh;
 }
 
 
@@ -257,6 +257,7 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
     height: 200px;
+    row-gap: 40px;
 }
 
 .graphBox .box{
@@ -270,7 +271,17 @@ a {
 }
 
 .graphBox .box1{
-    max-height: 50%;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    width: 86%;
+    box-shadow: var(--ombra-esterna);
+    border-radius: 20px;
+    background: var(--bianco);
+}
+
+
+.graphBox .box-eventi{
     position: relative;
     display: flex;
     padding: 20px;
@@ -314,8 +325,23 @@ a {
 
 
 
-.provaaa{
-    display: flex;
-    align-items: center;
+.listaeventi{
+
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.listadeglieventi{
+    margin: 10px;
+    padding: 30px;
+    background-color: #f2f2f2;
+    position: relative;
+    align-items: center;
+    display: block;
+    border-radius: 18px;
+    width: auto;
+
 }

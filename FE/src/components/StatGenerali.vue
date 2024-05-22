@@ -9,21 +9,31 @@ import axios from 'axios';
 import { ref, watch } from 'vue';
 const data1 = ref(0);
 
-axios.get("/api/call").then(response => {
-    console.log(response.data);
-    let data1 = response.data;
+
+  axios.get('/api/allData')
+  .then(response => {
+    const data = response.data;
+    const partecipanti = data.partecipanti;
+    const utenti = data.utenti;
+    const valutazioni = data.valutazioni;
+    const coso = data.coso;
     
-    let output = document.getElementById("myOutput");
-    
-    data1.forEach((item: MyTable) => {
-        let newText = document.createTextNode(`${item.id}`);
-        //${item.description}
-        let breakLine = document.createElement("br");
-        
-        output.appendChild(newText);
-        output.appendChild(breakLine);
-    });
-})
+    // Aggiorna i placeholder nel HTML con i valori ottenuti
+    document.getElementById('partecipanti-placeholder').innerText = `${partecipanti}`;
+    document.getElementById('utenti-placeholder').innerText = `${utenti}`;
+    document.getElementById('valutazioni-placeholder').innerText = `${valutazioni}`;
+    document.getElementById('coso-placeholder').innerText = `${coso}`;
+
+
+    // Ora puoi utilizzare partecipanti e utenti come desideri
+    console.log("Partecipanti:", partecipanti);
+    console.log("Utenti:", utenti);
+    console.log("valutazioni:", partecipanti);
+    console.log("coso:", utenti);
+  })
+  .catch(error => {
+    console.error('Si è verificato un errore durante il recupero dei dati:', error);
+  });
 
 
 
@@ -174,7 +184,7 @@ createApp().use(VCalendar);
             <a href="/dashboard-clienti">
              <div class="card">
                 <div>
-                    <div class="numbers"><p id="myOutput"></p></div>
+                    <div class="numbers"><div id="partecipanti-placeholder">{{ partecipanti }}</div></div>
                     <div class="cardName">Partecipanti</div>
                 </div>
                 <div class="iconBx">
@@ -184,7 +194,7 @@ createApp().use(VCalendar);
     
              <div class="card">
                 <div>
-                    <div class="numbers">856</div>
+                    <div class="numbers"><div id="utenti-placeholder">{{ utenti }}</div></div>    
                     <div class="cardName">Prova</div>
                 </div>
                  <div class="iconBx">
@@ -194,7 +204,7 @@ createApp().use(VCalendar);
 
             <div class="card">
                 <div>
-                    <div class="numbers">7232</div>
+                    <div class="numbers"><div id="valutazioni-placeholder">{{ valutazioni }}</div></div>
                     <div class="cardName">Test</div>
                 </div>
                  <div class="iconBx">
@@ -204,7 +214,7 @@ createApp().use(VCalendar);
 
             <div class="card">
                 <div>
-                    <div class="numbers">912</div>
+                    <div class="numbers"><div id="coso-placeholder">{{ coso }}</div></div>
                     <div class="cardName">Number</div>
                 </div>
                  <div class="iconBx">
@@ -222,19 +232,23 @@ createApp().use(VCalendar);
                 <canvas class="graficoUno" id="myChart2"></canvas>
 
             </div>
-        </div>
-        <div class="provaaa">
+            <div class="box-eventi">
+                <div class="listaeventi">
             <ul id="eventList">
         <!-- Event items will be added here -->
     </ul>
 
     <!-- Template for event item -->
     <template id="eventTemplate">
-        <li></li>
+        <li class="listadeglieventi"></li>
     </template>
         </div>
     <!-- fine del contenuto della pagina-->
     </div>
+
+            </div>
+        </div>
+        
 </div>
 </template>
 

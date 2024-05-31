@@ -69,8 +69,12 @@ document.addEventListener('DOMContentLoaded', async () => {
          </template>
               </div>
 
-
-        <!-- fine del contenuto della pagina-->
+          <div>
+            <router-link to="/Recensioni">
+              <button> Recensioni</button>
+            </router-link>
+          </div>
+          <!-- fine del contenuto della pagina-->
         </div>
         
     

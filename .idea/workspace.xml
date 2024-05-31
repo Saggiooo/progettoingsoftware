@@ -4,7 +4,320 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9af32577-6a81-429b-ba87-2afbe593e76e" name="Changes" comment="" />
+=======
+    <list default="true" id="9af32577-6a81-429b-ba87-2afbe593e76e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/he" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/he" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/nanoid" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/nanoid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/node-which" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/node-which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/npm-run-all" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/npm-run-all" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/npm-run-all2" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/npm-run-all2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/pidtree" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/pidtree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/rollup" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/rollup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/run-p" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/run-p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/run-s" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/run-s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/tsc" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/tsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/tsserver" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/tsserver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/vite" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/vite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.bin/vue-tsc" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.bin/vue-tsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/@babel/parser/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/@babel/parser/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/@babel/parser/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/@babel/parser/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/@babel/parser/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/@babel/parser/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/@babel/parser/bin/babel-parser.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/@babel/parser/bin/babel-parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/@babel/parser/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/@babel/parser/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/@babel/parser/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/@babel/parser/lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/@babel/parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/@babel/parser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/@babel/parser/typings/babel-parser.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/@babel/parser/typings/babel-parser.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/esbuild/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/esbuild/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/esbuild/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/esbuild/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/esbuild/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/esbuild/bin/esbuild" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/esbuild/install.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/esbuild/install.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/esbuild/lib/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/esbuild/lib/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/esbuild/lib/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/esbuild/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/esbuild/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/he/LICENSE-MIT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/he/LICENSE-MIT.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/he/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/he/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/he/bin/he" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/he/bin/he" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/he/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/he/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/he/man/he.1" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/he/man/he.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/he/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/he/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.browser.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.browser.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.native.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/async/index.native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/async/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/async/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/bin/nanoid.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/bin/nanoid.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/index.browser.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/index.browser.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/index.browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/index.browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/index.d.cts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/index.d.cts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/non-secure/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/non-secure/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/non-secure/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/non-secure/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/non-secure/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/non-secure/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/non-secure/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/non-secure/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/url-alphabet/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/url-alphabet/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/url-alphabet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/url-alphabet/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/nanoid/url-alphabet/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/nanoid/url-alphabet/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/bin/pidtree.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/bin/pidtree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/bin.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/bin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/get.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/get.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/pidtree.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/pidtree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/ps.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/ps.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/wmic.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/lib/wmic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/license" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/license" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/pidtree/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/pidtree/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/bin/rollup" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/bin/rollup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/getLogFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/getLogFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/parseAst.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/parseAst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/shared/node-entry.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/shared/node-entry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/shared/parseAst.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/shared/parseAst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/shared/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/es/shared/watch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/getLogFilter.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/getLogFilter.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/getLogFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/getLogFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/loadConfigFile.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/loadConfigFile.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/loadConfigFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/loadConfigFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/native.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/parseAst.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/parseAst.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/parseAst.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/parseAst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/rollup.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/rollup.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/fsevents-importer.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/fsevents-importer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/loadConfigFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/loadConfigFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/parseAst.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/parseAst.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/rollup.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/rollup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/watch-cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/watch-cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/watch.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/dist/shared/watch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/rollup/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/rollup/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/bin/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/bin/semver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/classes/comparator.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/classes/comparator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/classes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/classes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/classes/range.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/classes/range.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/classes/semver.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/classes/semver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/clean.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/clean.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/cmp.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/cmp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/coerce.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/coerce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/compare-build.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/compare-build.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/compare-loose.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/compare-loose.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/compare.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/compare.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/diff.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/diff.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/eq.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/eq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/gt.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/gt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/gte.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/gte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/inc.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/inc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/lte.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/lte.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/major.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/major.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/minor.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/minor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/neq.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/neq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/patch.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/patch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/prerelease.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/prerelease.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/rcompare.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/rcompare.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/rsort.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/rsort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/satisfies.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/satisfies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/sort.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/sort.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/functions/valid.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/functions/valid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/internal/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/internal/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/internal/debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/internal/debug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/internal/identifiers.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/internal/identifiers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/internal/parse-options.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/internal/parse-options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/internal/re.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/internal/re.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/preload.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/preload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/range.bnf" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/range.bnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/gtr.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/gtr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/intersects.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/intersects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/ltr.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/ltr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/max-satisfying.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/max-satisfying.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/min-satisfying.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/min-satisfying.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/min-version.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/min-version.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/outside.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/outside.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/simplify.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/simplify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/subset.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/subset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/to-comparators.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/to-comparators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/semver/ranges/valid.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/semver/ranges/valid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/SECURITY.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/SECURITY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/bin/tsc" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/bin/tsc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/bin/tsserver" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/bin/tsserver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/cancellationToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/cancellationToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/cs/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/cs/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/de/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/de/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/es/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/es/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/fr/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/fr/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/it/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/it/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/ja/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/ja/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/ko/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/ko/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.decorators.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.decorators.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.decorators.legacy.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.decorators.legacy.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.dom.asynciterable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.dom.asynciterable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.dom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.dom.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.dom.iterable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.dom.iterable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.collection.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.collection.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.core.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.core.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.generator.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.generator.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.iterable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.iterable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.promise.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.promise.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.proxy.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.proxy.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.reflect.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.reflect.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.symbol.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.symbol.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2016.array.include.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2016.array.include.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2016.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2016.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2016.full.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2016.full.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2016.intl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2016.intl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.date.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.date.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.full.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.full.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.intl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.intl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.object.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.object.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.string.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.string.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.full.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.full.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.intl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.intl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.promise.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.promise.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.regexp.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2018.regexp.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.array.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.array.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.full.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.full.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.intl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.intl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.object.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.object.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.string.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.string.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.symbol.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2019.symbol.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.bigint.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.bigint.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.date.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.date.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.full.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.full.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.intl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.intl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.number.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.number.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.promise.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.promise.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.sharedmemory.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.string.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.string.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2020.symbol.wellknown.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.full.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.full.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.intl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.intl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.promise.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.promise.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.string.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.string.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.weakref.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2021.weakref.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.array.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.array.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.error.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.error.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.full.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.full.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.intl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.intl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.object.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.object.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.regexp.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.regexp.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.sharedmemory.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.sharedmemory.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.string.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2022.string.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2023.array.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2023.array.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2023.collection.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2023.collection.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2023.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2023.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2023.full.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es2023.full.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es5.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es5.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es6.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.es6.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.collection.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.collection.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.decorators.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.decorators.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.disposable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.disposable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.full.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.full.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.intl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.intl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.object.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.object.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.promise.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.esnext.promise.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.scripthost.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.scripthost.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.webworker.asynciterable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.webworker.asynciterable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.webworker.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.webworker.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.webworker.importscripts.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.webworker.importscripts.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.webworker.iterable.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/lib.webworker.iterable.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/pl/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/pl/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/pt-br/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/pt-br/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/ru/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/ru/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tr/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tr/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tsc.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tsc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tsserver.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tsserver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tsserverlibrary.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tsserverlibrary.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tsserverlibrary.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/tsserverlibrary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/typescript.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/typescript.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/typescript.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/typescript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/typingsInstaller.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/typingsInstaller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/watchGuard.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/watchGuard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/zh-cn/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/zh-cn/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/lib/zh-tw/diagnosticMessages.generated.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/lib/zh-tw/diagnosticMessages.generated.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/typescript/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/typescript/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/bin/openChrome.applescript" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/bin/openChrome.applescript" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/bin/vite.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/bin/vite.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/client.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/client.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/client/client.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/client/client.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/client/env.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/client/env.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node-cjs/publicUtils.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node-cjs/publicUtils.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-8a-6Quh6.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-8a-6Quh6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-jvB8WLp9.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-jvB8WLp9.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-kjUoH5nk.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-kjUoH5nk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-pxQDj-UY.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-pxQDj-UY.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-sFlFG1c_.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/chunks/dep-sFlFG1c_.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/runtime.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/runtime.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/runtime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/types.d-FdqQ54oU.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/dist/node/types.d-FdqQ54oU.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/index.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/index.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/index.d.cts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/index.d.cts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/types/customEvent.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/types/customEvent.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/types/hmrPayload.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/types/hmrPayload.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/types/hot.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/types/hot.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/types/import-meta.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/types/import-meta.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/types/importGlob.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/types/importGlob.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/types/importMeta.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/types/importMeta.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/types/metadata.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/types/metadata.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vite/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vite/types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vue-tsc/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vue-tsc/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vue-tsc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vue-tsc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vue-tsc/bin/vue-tsc.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vue-tsc/bin/vue-tsc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vue-tsc/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vue-tsc/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vue-tsc/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vue-tsc/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/vue-tsc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/vue-tsc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/which/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/which/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/which/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/which/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/which/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/which/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/which/bin/node-which" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/which/bin/node-which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/which/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/which/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/node_modules/which/which.js" beforeDir="false" afterPath="$PROJECT_DIR$/FE/node_modules/which/which.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/src/components/TuttigliEventi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/FE/src/components/TuttigliEventi.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FE/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FE/src/router.ts" afterDir="false" />
+    </list>
+>>>>>>> 1a3b888064a98bf0c793a0ec56046da1682d94bc
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +340,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Composition API Component" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -43,9 +363,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+<<<<<<< HEAD
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+=======
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+>>>>>>> 1a3b888064a98bf0c793a0ec56046da1682d94bc
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/simone/Documents/Università/Ing. Software/progettoingsoftware",
     "node.js.detected.package.eslint": "true",
@@ -53,14 +378,29 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+<<<<<<< HEAD
     "ts.external.directory.path": "C:\\Users\\paolo\\Desktop\\progettoingsoftware\\FE\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
+=======
+    "ts.external.directory.path": "C:\\Users\\andre\\progettoingsoftware\\FE\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
+>>>>>>> 1a3b888064a98bf0c793a0ec56046da1682d94bc
   }
 }]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+<<<<<<< HEAD
         <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+=======
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+>>>>>>> 1a3b888064a98bf0c793a0ec56046da1682d94bc
       </set>
     </attachedChunks>
   </component>
@@ -78,7 +418,11 @@
       <workItem from="1714408633356" duration="861000" />
       <workItem from="1714718948429" duration="14000" />
       <workItem from="1715085651568" duration="295000" />
+<<<<<<< HEAD
       <workItem from="1715681793652" duration="12000" />
+=======
+      <workItem from="1717164988971" duration="860000" />
+>>>>>>> 1a3b888064a98bf0c793a0ec56046da1682d94bc
     </task>
     <servers />
   </component>

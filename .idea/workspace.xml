@@ -4,147 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9af32577-6a81-429b-ba87-2afbe593e76e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BE-maven/src/main/java/com/example/dashboard/api/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BE-maven/src/main/java/com/example/dashboard/models/MyTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BE-maven/src/main/java/com/example/dashboard/repositories/MyRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BE-maven/src/main/java/com/example/dashboard/services/MyService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BE-maven/src/main/java/com/example/dashboard/services/TemplateRestConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/8.6/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/modules/MicroservizioBase.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/bin/main/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/bin/main/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/bin/main/it/unife/ingsw202324/MicroservizioBase/api/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/bin/main/it/unife/ingsw202324/MicroservizioBase/models/MyTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/bin/main/it/unife/ingsw202324/MicroservizioBase/repositories/MyRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/bin/main/it/unife/ingsw202324/MicroservizioBase/services/MyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/bin/main/it/unife/ingsw202324/MicroservizioBase/services/TemplateRestConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/bin/test/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/api/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/models/MyTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/repositories/MyRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/services/MyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/services/TemplateRestConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/classes/java/test/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/resolvedMainClassName" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/resources/main/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/tmp/compileJava/compileTransaction/stash-dir/MainController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/tmp/compileJava/compileTransaction/stash-dir/TemplateRestConsumer.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/grant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/src/main/java/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/src/main/java/it/unife/ingsw202324/MicroservizioBase/api/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/src/main/java/it/unife/ingsw202324/MicroservizioBase/models/MyTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/src/main/java/it/unife/ingsw202324/MicroservizioBase/repositories/MyRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/src/main/java/it/unife/ingsw202324/MicroservizioBase/services/MyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/src/main/java/it/unife/ingsw202324/MicroservizioBase/services/TemplateRestConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE-old/src/test/java/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/8.6/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/file-system.probe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/modules/MicroservizioBase.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/bin/main/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/bin/main/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/bin/main/it/unife/ingsw202324/MicroservizioBase/api/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/bin/main/it/unife/ingsw202324/MicroservizioBase/models/MyTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/bin/main/it/unife/ingsw202324/MicroservizioBase/repositories/MyRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/bin/main/it/unife/ingsw202324/MicroservizioBase/services/MyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/bin/main/it/unife/ingsw202324/MicroservizioBase/services/TemplateRestConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/bin/test/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/api/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/models/MyTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/repositories/MyRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/services/MyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/classes/java/main/it/unife/ingsw202324/MicroservizioBase/services/TemplateRestConsumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/classes/java/test/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/resolvedMainClassName" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/resources/main/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/tmp/compileJava/compileTransaction/stash-dir/MainController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/tmp/compileJava/compileTransaction/stash-dir/TemplateRestConsumer.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/grant" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/src/main/java/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/src/main/java/it/unife/ingsw202324/MicroservizioBase/api/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/src/main/java/it/unife/ingsw202324/MicroservizioBase/models/MyTable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/src/main/java/it/unife/ingsw202324/MicroservizioBase/repositories/MyRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/src/main/java/it/unife/ingsw202324/MicroservizioBase/services/MyService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/src/main/java/it/unife/ingsw202324/MicroservizioBase/services/TemplateRestConsumer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/src/test/java/it/unife/ingsw202324/MicroservizioBase/MicroservizioBaseApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FE/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE/src/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/FE/src/assets/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE/src/components/Impostazioni.vue" beforeDir="false" afterPath="$PROJECT_DIR$/FE/src/components/Impostazioni.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE/src/components/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/FE/src/components/Sidebar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FE/src/components/StatGenerali.vue" beforeDir="false" afterPath="$PROJECT_DIR$/FE/src/components/StatGenerali.vue" afterDir="false" />
-    </list>
+    <list default="true" id="9af32577-6a81-429b-ba87-2afbe593e76e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,12 +20,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="MicroservizioBase" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -175,6 +30,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -183,41 +41,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/simone/Documents/Università/Ing. Software/progettoingsoftware&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/simone/Documents/Università/Ing. Software/progettoingsoftware/FE/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/simone/Documents/Università/Ing. Software/progettoingsoftware",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\paolo\\Desktop\\progettoingsoftware\\FE\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="progettoingsoftware" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="progettoingsoftware" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
       </set>
     </attachedChunks>
   </component>
@@ -235,6 +78,7 @@
       <workItem from="1714408633356" duration="861000" />
       <workItem from="1714718948429" duration="14000" />
       <workItem from="1715085651568" duration="295000" />
+      <workItem from="1715681793652" duration="12000" />
     </task>
     <servers />
   </component>

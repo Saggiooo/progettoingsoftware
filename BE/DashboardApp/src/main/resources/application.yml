@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: DashboardApp
+  datasource:
+    url: jdbc:mysql://localhost:3306/dashboard
+    username: root
+    password: terry999
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+        show_sql: true

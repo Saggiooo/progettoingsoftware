@@ -4,6 +4,7 @@ import TuttigliEventi from './pages/Tuttiglieventi.vue';
 import InfoClienti from './pages/InformazioniClienti.vue';
 import Impostazioni from './pages/Impostazioni.vue';
 import GestioneAd from './pages/GestioneAd.vue';
+import Recensioni from './pages/Recensioni.vue';
 
 const routes = [
   { path: '/dashboard-statistiche', component: StatGenerali },
@@ -11,6 +12,7 @@ const routes = [
   { path: '/dashboard-clienti', component: InfoClienti },
   { path: '/dashboard-gestione-ads', component: GestioneAd },
   { path: '/dashboard-impostazioni', component: Impostazioni },
+  { path: '/recensioni', component: Recensioni },
   { path: '/', redirect: '/dashboard-statistiche' }
 ];
 
@@ -20,4 +22,3 @@ const router = createRouter({
 });
 
 export default router;
-

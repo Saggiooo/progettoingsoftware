@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+<<<<<<< HEAD
+    <data-source source="LOCAL" name="dashboard@localhost" uuid="2b16cce0-7491-4cfb-9758-67b0b63ab370">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/DashboardApp/src/main/resources/application.yml</remarks>
+=======
     <data-source source="LOCAL" name="dashboard@localhost" uuid="393e24c5-db5f-40f7-beae-b2b62842b982">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
+>>>>>>> 1a3b888064a98bf0c793a0ec56046da1682d94bc
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/dashboard</jdbc-url>
       <jdbc-additional-properties>

@@ -7,6 +7,13 @@
 
     <div class="contenutopagina">
       <!-- Inizio del contenuto della pagina-->
+
+      <div>
+            <router-link to="/Recensioni">
+              <button> Recensioni</button>
+            </router-link>
+        </div>
+
       <!-- Inserisci l'intestazione "Nav.vue"-->
       <div>
         <Nav />
@@ -34,7 +41,7 @@
     </div>
   </div>
 
-  
+
 
 </template>
 
@@ -157,7 +164,7 @@ p {
   margin-top: 20px;
   text-align: center;
   position: sticky;
-  bottom: 15px; 
+  bottom: 15px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -181,26 +188,10 @@ p {
 
 /* Stile per l'informazione della pagina corrente */
 .page-info {
-  margin: 5px 0 3px; 
+  margin: 5px 0 3px;
   font-weight: bold;
   color: black; /* Colore del testo */
   font-size: 18px; /* Ingrandisce il font */
 }
 </style>
-=======
-          <div>
-            <router-link to="/Recensioni">
-              <button> Recensioni</button>
-            </router-link>
-          </div>
-          <!-- fine del contenuto della pagina-->
-        </div>
-        
-    
-    </div>
-    </template>
-    
-    <style>
-    </style>
-    
->>>>>>> 1a3b888064a98bf0c793a0ec56046da1682d94bc
+

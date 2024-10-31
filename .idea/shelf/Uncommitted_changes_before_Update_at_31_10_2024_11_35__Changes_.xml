@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_31_10_2024_11_35_[Changes]" date="1730370912815" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_10_2024_11_35_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 31/10/2024 11:35 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="BE-maven09maggio2024/DashboardApp/mvnw.cmd" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="BE-maven09maggio2024/DashboardApp/mvnw" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="FE/node_modules/esbuild/bin/esbuild" />
+    <option name="AFTER_PATH" value="FE/node_modules/esbuild/bin/esbuild" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_10_2024_11_35_[Changes]/esbuild" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="BE-maven09maggio2024/DashboardApp/.mvn/wrapper/maven-wrapper.jar" />
+    <option name="AFTER_PATH" />
+    <option name="SHELVED_PATH" />
+  </binary>
+</changelist>

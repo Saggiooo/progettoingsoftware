@@ -23,6 +23,11 @@
           </li>
         </ul>
       </div>
+      <div>
+        <router-link to="/Recensioni">
+          <button> Recensioni</button>
+        </router-link>
+      </div>
 
       <!-- Bottoni per la paginazione -->
       <div class="pagination">
@@ -115,7 +120,6 @@ const nextPage = () => {
   max-width: 2000px;
 }
 
-<<<<<<< HEAD
 /* Stile per il contenitore degli eventi */
 .event-container {
   margin-top: 20px;
@@ -187,20 +191,5 @@ p {
   font-size: 18px; /* Ingrandisce il font */
 }
 </style>
-=======
-          <div>
-            <router-link to="/Recensioni">
-              <button> Recensioni</button>
-            </router-link>
-          </div>
-          <!-- fine del contenuto della pagina-->
-        </div>
-        
-    
-    </div>
-    </template>
-    
-    <style>
-    </style>
-    
->>>>>>> 1a3b888064a98bf0c793a0ec56046da1682d94bc
+
+

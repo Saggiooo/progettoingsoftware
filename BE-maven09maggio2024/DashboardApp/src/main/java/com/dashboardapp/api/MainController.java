@@ -46,8 +46,17 @@ public class MainController {
     }
 
     @GetMapping("/callREST")
-    public String sayHelloWorld() {
-        return "[{ \"pippo\": 114 }]";
+    @ApiOperation(value = "Get Hello World message", notes = "Returns a simple Hello World message")
+    public ResponseEntity<String> sayHelloWorld() {
+        Logger logger = LoggerFactory.getLogger(MainController.class);
+        logger.info("Executing sayHelloWorld method");
+        try {
+            // Method logic here
+            return ResponseEntity.ok("[{ \"pippo\": 114 }]");
+        } catch (Exception e) {
+            logger.error("An error occurred in sayHelloWorld method: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error occurred");
+        }
     }
 
     @GetMapping("/callPROVA")

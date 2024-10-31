@@ -198,8 +198,3 @@ p {
   font-size: 18px; /* Ingrandisce il font */
 }
 </style>
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 605b63987967c9944009f880dbe049487259637d

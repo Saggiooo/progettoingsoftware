@@ -11,9 +11,9 @@
     "type-check": "vue-tsc --build --force"
   },
   "dependencies": {
-    "@esbuild/win32-x64": "^0.21.4",
     "axios": "^1.6.7",
     "chart.js": "^3.9.1",
+    "esbuild": "^0.24.0",
     "v-calendar": "^3.1.2",
     "vue": "^3.4.21",
     "vue-router": "^4.3.2"

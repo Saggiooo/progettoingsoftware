@@ -1,4 +1,4 @@
-<template>
+n<template>
   <div class="sidebar">
     <div>
         <a href="/"><img src="@/assets/img/logosocial.png" alt="Logo del Social" class="logo"></img></a>

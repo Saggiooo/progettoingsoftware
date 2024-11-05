@@ -5,23 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6756e8e-13a5-441f-a87f-ebbe6093f2b1" name="Changes" comment="sistemo icone">
-      <change beforePath="$PROJECT_DIR$/../BE/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/api/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/api/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/config/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/config/RestClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/models/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/models/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/OrganizerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/OrganizerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/ParticipantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/ParticipantService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@esbuild/darwin-arm64/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@esbuild/darwin-arm64/bin/esbuild" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@esbuild/darwin-arm64/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@esbuild/darwin-arm64/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/@esbuild/win32-x64/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/bin/esbuild" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/install.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/install.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/lib/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/lib/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/lib/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/node_modules/@esbuild/win32-x64/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/node_modules/@esbuild/win32-x64/esbuild.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/node_modules/@esbuild/win32-x64/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/esbuild/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/esbuild/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,20 +43,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/simone/Documents/Università/Ing. Software/progettoingsoftware/FE/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/simone/Documents/Università/Ing. Software/progettoingsoftware/FE/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -72,6 +75,8 @@
       <updated>1714745872412</updated>
       <workItem from="1714745873452" duration="8000" />
       <workItem from="1730370107398" duration="3210000" />
+      <workItem from="1730818028884" duration="1026000" />
+      <workItem from="1730820615903" duration="330000" />
     </task>
     <task id="LOCAL-00001" summary="prova">
       <option name="closed" value="true" />

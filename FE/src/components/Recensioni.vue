@@ -129,8 +129,8 @@ export default {
       dateOrder:'desc',
       message: '',
       messageType: '',
-      averageRating: null,
-      ratingCount: {},
+      //averageRating: null,
+      //ratingCount: {},
     };
   },
   methods: {
@@ -221,6 +221,8 @@ export default {
     async fetchIds() {
       try {
         const response = await axios.get('http://localhost:3000/api/ids');  // Endpoint BE per ottenere IDs
+        // Aggiungi un log per vedere la risposta
+        console.log("Risposta ricevuta:", response);
         this.eventId = response.data.eventId;
         this.userId = response.data.userId;
         await this.fetchReviews(); //una volta recuperato l'id devo recuperare anche tutte le recensioni
@@ -230,6 +232,7 @@ export default {
     },
 
     //recupero le stats dal BE
+    /*
     async fetchStatistics(){
       try {
         const response = await axios.get('api/recensioni/statistiche', {
@@ -237,10 +240,11 @@ export default {
         });
         this.avarageRating = response.data.avarageRating;
         this.ratingCount = response.data.ratingCount;
-      } catch (error){
+      } catch (error){ 
         console.error("Errore nel recupero stats", error);
       }
     },
+    */
 
     //formatto la data
     formatDate(date){
@@ -256,7 +260,7 @@ export default {
 },
   mounted() {
     this.fetchIds();  // Richiama gli ID quando il componente è montato
-    this.fetchStatistics();
+    //this.fetchStatistics();
   },
 
 };

@@ -5,38 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6756e8e-13a5-441f-a87f-ebbe6093f2b1" name="Changes" comment="sistemo icone">
-      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/ReviewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/models/IdsResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/models/Review.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/repository/ReviewRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/services/IdsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/services/ReviewService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/review.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-CSAU5B4Q.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-CSAU5B4Q.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Recensioni.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recensioni.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +67,7 @@
       <workItem from="1731086103182" duration="2139000" />
       <workItem from="1731259978230" duration="1752000" />
       <workItem from="1731317766456" duration="11444000" />
-      <workItem from="1731402682027" duration="7676000" />
+      <workItem from="1731402682027" duration="11583000" />
     </task>
     <task id="LOCAL-00001" summary="prova">
       <option name="closed" value="true" />

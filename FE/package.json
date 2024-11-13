@@ -13,6 +13,7 @@
   "dependencies": {
     "axios": "^1.6.7",
     "chart.js": "^3.9.1",
+    "dayjs": "^1.11.13",
     "esbuild": "^0.24.0",
     "v-calendar": "^3.1.2",
     "vue": "^3.4.21",

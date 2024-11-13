@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.page-container {
+    background-color: #ffffff;
+    color: #212529;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-bar {
+    background-color: #ffffff;
+    color: #212529;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #006fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.back-button:hover {
+    color: #cccccc;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.message-box {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.recensioni {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+}
+
+.star-rating .fa-star {
+    font-size: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.star-rating .checked {
+    color: gold;
+}
+
+.toggle-review-form, .reset-button {
+    color: #007bff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.toggle-review-form:hover, .reset-button:hover {
+    color: #0056b3;
+}
+
+.filter-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.review-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-item h3 {
+    font-weight: bold;
+}
+
+.review-item p {
+    font-size: 14px;
+    color: #555;
+}

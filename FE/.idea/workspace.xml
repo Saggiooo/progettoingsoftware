@@ -5,26 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6756e8e-13a5-441f-a87f-ebbe6093f2b1" name="Changes" comment="sistemo icone">
-      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/checksums/md5-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/checksums/sha1-checksums.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/8.6/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/api/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/api/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/config/RestClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/config/RestClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/models/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/models/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/OrganizerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/OrganizerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/ParticipantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BE/DashboardApp/src/main/java/com/dashboardapp/services/ParticipantService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/ReviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/models/IdsResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/models/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/repository/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/services/IdsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/services/ReviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/review.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/resources/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-CSAU5B4Q.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-CSAU5B4Q.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/lib/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/vite/node_modules/esbuild/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Recensioni.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recensioni.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +47,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 5
@@ -53,15 +70,16 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/simone/Documents/Università/Ing. Software/progettoingsoftware/FE/node_modules/typescript/lib&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\andre\\progettoingsoftware\\FE\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
       </set>
     </attachedChunks>
   </component>
@@ -77,6 +95,11 @@
       <workItem from="1730370107398" duration="3210000" />
       <workItem from="1730818028884" duration="1026000" />
       <workItem from="1730820615903" duration="330000" />
+      <workItem from="1730908171715" duration="5516000" />
+      <workItem from="1731086103182" duration="2139000" />
+      <workItem from="1731259978230" duration="1752000" />
+      <workItem from="1731317766456" duration="11444000" />
+      <workItem from="1731402682027" duration="7676000" />
     </task>
     <task id="LOCAL-00001" summary="prova">
       <option name="closed" value="true" />

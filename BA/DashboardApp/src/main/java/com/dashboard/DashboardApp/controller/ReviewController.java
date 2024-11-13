@@ -54,7 +54,10 @@ public class ReviewController {
     //aggiungo un endpoint per ottenere le stats delle recensioni
     @GetMapping("/recensioni/statistiche")
     public ResponseEntity<Map<String, Object>> getReviewStatistics(@RequestParam Integer eventId){
+        //calcolo le stats delle recensioni per un determinato evento
         Map<String, Object> stats = reviewService.calculateReviewStatistics(eventId);
+
+        //restituisco le stats al FE
         return ResponseEntity.ok(stats);
     }
 }

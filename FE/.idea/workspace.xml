@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6756e8e-13a5-441f-a87f-ebbe6093f2b1" name="Changes" comment="sistemo icone">
+      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/services/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/services/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Recensioni.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recensioni.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +71,9 @@
       <workItem from="1731259978230" duration="1752000" />
       <workItem from="1731317766456" duration="11444000" />
       <workItem from="1731402682027" duration="11583000" />
+      <workItem from="1731495999711" duration="1251000" />
+      <workItem from="1731514658083" duration="466000" />
+      <workItem from="1731515555144" duration="4194000" />
     </task>
     <task id="LOCAL-00001" summary="prova">
       <option name="closed" value="true" />

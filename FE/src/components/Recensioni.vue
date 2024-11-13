@@ -91,6 +91,22 @@
     </div>
 
     <!-- sezione per vedere la media delle recensioni -->
+    <div class="review-stats">
+      <h3>Statistiche Recensioni</h3>
+      <ul>
+        <!-- Itera attraverso ogni livello di rating, dal 5 stelle (più alto) al 1 stella -->
+        <li v-for="star in [5, 4, 3, 2, 1]" :key="star">
+          <!-- Per ogni livello di rating, crea le stelle dorate in base al numero di stelle -->
+          <span v-for="i in star" :key="i" class="fa fa-star gold-star"></span>:
+          <!-- Mostra il numero di recensioni per ciascun livello di rating (da 1 a 5 stelle) -->
+          {{ ratingCount[star] || 0 }} recensioni
+        </li>
+      </ul>
+      <!-- Mostra la media complessiva delle recensioni con una stella dorata accanto -->
+      <div>Media complessiva: {{ averageRating }} <span class="fa fa-star gold-star"></span></div>
+    </div>
+
+
 
     <div class="reviews-list row">
       <h3 class="col-12 text-center">Recensioni</h3>
@@ -129,8 +145,8 @@ export default {
       dateOrder:'desc',
       message: '',
       messageType: '',
-      //averageRating: null,
-      //ratingCount: {},
+      averageRating: null,
+      ratingCount: {},
     };
   },
   methods: {
@@ -153,6 +169,8 @@ export default {
         console.log("Dati recensione inviati:", reviewData);
         this.displayMessage("Recensione inviata con successo!", "success");
         this.resetForm();  // Resetta il modulo dopo l'invio
+        this.fetchReviews();
+        this.fetchStatistics();
       } catch (error) {
         console.error("Errore nel pubblicare la recensione", error);
         this.displayMessage("Errore nel pubblicare la recensione", "error");
@@ -232,19 +250,20 @@ export default {
     },
 
     //recupero le stats dal BE
-    /*
+
     async fetchStatistics(){
       try {
         const response = await axios.get('api/recensioni/statistiche', {
           params: {eventId: this.eventId}
         });
-        this.avarageRating = response.data.avarageRating;
+        // Arrotonda il valore di averageRating a un decimale
+        this.averageRating = Math.round(response.data.averageRating * 10) / 10;
         this.ratingCount = response.data.ratingCount;
-      } catch (error){ 
+      } catch (error){
         console.error("Errore nel recupero stats", error);
       }
     },
-    */
+
 
     //formatto la data
     formatDate(date){
@@ -258,9 +277,11 @@ export default {
       this.fetchReviews(); //recupero tutte le reviews
     }
 },
-  mounted() {
-    this.fetchIds();  // Richiama gli ID quando il componente è montato
-    //this.fetchStatistics();
+  async mounted() {
+    await this.fetchIds();
+    if (this.eventId) {
+      this.fetchStatistics();
+    }
   },
 
 };
@@ -351,6 +372,10 @@ html, body {
 }
 
 .star-rating .fa-star.checked {
+  color: gold;
+}
+
+.gold-star{
   color: gold;
 }
 

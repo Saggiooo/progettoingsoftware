@@ -73,16 +73,26 @@ public class ReviewService {
 
     //Metodo per calcolare le statistiche delle recensioni e mostrare per ogni evento la distribuzione dei voti
     public Map<String, Object> calculateReviewStatistics(Integer eventId){
+        Map<String, Object> stats = new HashMap<>();
+
+        //recupero tutte le recensioni
         List<Review> reviews = reviewRepository.findByEventIdOrderByDateDesc(eventId);
+
         double averageRating = reviews.stream()
                 .mapToInt(Review::getGeneralRating)
                 .average()
                 .orElse(0.0);
 
+        //conto i voti per ogni livello di rating
         Map<Integer, Long> ratingCount = reviews.stream()
                 .collect(Collectors.groupingBy(Review::getGeneralRating, Collectors.counting()));
 
-        Map<String, Object> stats = new HashMap<>();
+        // Assicurati che ci siano valori per ogni livello di rating
+        for (int i = 1; i <= 5; i++) {
+            ratingCount.putIfAbsent(i, 0L);
+        }
+
+
         stats.put("averageRating", averageRating);
         stats.put("ratingCount", ratingCount);
         return stats;

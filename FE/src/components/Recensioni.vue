@@ -26,10 +26,10 @@
       <div v-if="showReviewForm" class="recensioni-form">
         <form @submit.prevent="submitReview">
           <div class="form-group">
-            <input type="text" id="title" v-model="title" class="form-control" placeholder="Titolo Recensione" required />
+            <input type="text" id="title" v-model="title" class="form-control" placeholder="Titolo Recensione"/>
           </div>
           <div class="form-group">
-            <textarea id="reviewText" v-model="reviewText" class="form-control" placeholder="Testo Recensione" required></textarea>
+            <textarea id="reviewText" v-model="reviewText" class="form-control" placeholder="Testo Recensione"></textarea>
           </div>
           <div class="form-group">
             <label for="generalRating">Voto evento:</label>
@@ -64,7 +64,7 @@
               </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-success submit-button">Pubblica</button>
+          <button @click.prevent="submitReview" class="btn btn-success submit-button">Pubblica</button>
           <button @click.prevent="resetForm" class="btn btn-danger reset-button">Resetta</button>
         </form>
       </div>
@@ -154,6 +154,12 @@ export default {
   methods: {
     // Funzione per inviare la recensione al backend
     async submitReview() {
+      // Validazione iniziale
+      if (!this.title || !this.reviewText || this.generalRating === null) {
+        this.displayMessage("Compila tutti i campi obbligatori prima di inviare la recensione.", "error");
+        return;
+      }
+
       const reviewData = {
         title: this.title,
         text: this.reviewText,
@@ -171,13 +177,14 @@ export default {
         console.log("Dati recensione inviati:", reviewData);
         this.displayMessage("Recensione inviata con successo!", "success");
         this.resetForm();  // Resetta il modulo dopo l'invio
-        this.fetchReviews();
-        this.fetchStatistics();
+        this.fetchReviews(); // Aggiorna le recensioni visualizzate
+        this.fetchStatistics(); // Aggiorna le statistiche visualizzate
       } catch (error) {
         console.error("Errore nel pubblicare la recensione", error);
         this.displayMessage("Errore nel pubblicare la recensione", "error");
       }
-    },
+    }
+,
 
     displayMessage(msg, type){
       this.message = msg;

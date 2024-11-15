@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6756e8e-13a5-441f-a87f-ebbe6093f2b1" name="Changes" comment="sistemo icone">
-      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/services/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/services/ReviewService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/review.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/review.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Recensioni.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recensioni.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -46,6 +52,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\progettoingsoftware\FE\src\pages" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -74,6 +85,8 @@
       <workItem from="1731495999711" duration="1251000" />
       <workItem from="1731514658083" duration="466000" />
       <workItem from="1731515555144" duration="4194000" />
+      <workItem from="1731603587512" duration="445000" />
+      <workItem from="1731668886411" duration="3044000" />
     </task>
     <task id="LOCAL-00001" summary="prova">
       <option name="closed" value="true" />

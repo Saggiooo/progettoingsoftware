@@ -8,7 +8,7 @@
           </button>
         </div>
         <div class="col title-text">
-          Recensioni evento Pippo
+          Recensioni evento {{ eventId }}
         </div>
         <div class="col"></div> <!-- Spazio vuoto per centrare la barra -->
       </div>
@@ -65,6 +65,7 @@
             </div>
           </div>
           <button type="submit" class="btn btn-success submit-button">Pubblica</button>
+          <button @click.prevent="resetForm" class="btn btn-danger reset-button">Resetta</button>
         </form>
       </div>
     </div>
@@ -95,7 +96,7 @@
       <h3>Statistiche Recensioni</h3>
       <ul>
         <!-- Itera attraverso ogni livello di rating, dal 5 stelle (più alto) al 1 stella -->
-        <li v-for="star in [5, 4, 3, 2, 1]" :key="star">
+        <li v-for="star in [5, 4, 3, 2, 1]" :key="star" @click="setFilterRating(star)" class="clickable">
           <!-- Per ogni livello di rating, crea le stelle dorate in base al numero di stelle -->
           <span v-for="i in star" :key="i" class="fa fa-star gold-star"></span>:
           <!-- Mostra il numero di recensioni per ciascun livello di rating (da 1 a 5 stelle) -->
@@ -108,10 +109,11 @@
 
 
 
-    <div class="reviews-list row">
+    <div class="reviews-list row" ref="reviewsSection">
       <h3 class="col-12 text-center">Recensioni</h3>
       <div v-for="review in reviews" :key="review.reviewId" class="review-item">
         <h4>{{ review.title }}</h4>
+        <p>{{ review.userId }}</p>
         <p>{{formatDate(review.date)}}</p>
         <p>{{ review.text }}</p>
         <div>Voto generale: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.generalRating}"></span></div>
@@ -209,6 +211,14 @@ export default {
     setFilterRating(rating) {
       this.filterRating = rating;
       this.fetchReviews(); //ricarico le recensioni corrispondenti al filtro indicato
+
+      // Aspetta un breve istante affinché i dati siano caricati e quindi esegui lo scorrimento
+      this.$nextTick(() => {
+        const reviewsSection = this.$refs.reviewsSection;
+        if (reviewsSection) {
+          reviewsSection.scrollIntoView({ behavior: 'smooth' }); // Scorri con animazione fluida
+        }
+      });
     },
 
     // Funzione per resettare il modulo di recensione
@@ -288,200 +298,5 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
-@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
-
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #f8f9fa;
-  color: #212529;
-  font-family: 'Roboto', sans-serif;
-  height: 100%;
-}
-
-.page-container {
-  background-color: #ffffff; /* Sfondo chiaro */
-  color: #212529; /* Testo scuro */
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.top-bar {
-  background-color: #ffffff; /* Sfondo chiaro */
-  color: #212529; /* Testo scuro */
-  padding: 15px 0;
-  border-radius: 10px;
-  margin-bottom: 20px; /* Aggiungiamo uno spazio sotto la barra superiore */
-  box-shadow: 2px 5px rgba(0, 0, 0, 0.1); /* Aggiungiamo una leggera ombra */
-}
-
-.back-button {
-  padding: 5px 10px;
-  font-size: 20px;
-  color: #006fff;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.back-button:hover {
-  color: #cccccc;
-}
-
-.back-button i {
-  margin-right: 5px;
-}
-
-.title-text {
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.recensioni {
-  max-width: 600px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-}
-.recensioni-form {
-  margin-top: 10px;
-}
-.form-group {
-  margin-bottom: 20px;
-}
-
-.star-rating {
-  display: flex;
-  margin-left: 7px;
-}
-
-.star-rating .fa-star {
-  font-size: 24px;
-  margin-right: 5px;
-  cursor: pointer;
-  color: #ccc; /* Colore grigio per le stelle non selezionate */
-}
-
-.star-rating .fa-star.checked {
-  color: gold;
-}
-
-.gold-star{
-  color: gold;
-}
-
-.submit-button {
-  margin-top: 10px;
-}
-
-.toggle-review-form {
-  cursor: pointer;
-  color: #007bff;
-  text-decoration: underline;
-  margin-bottom: 10px;
-}
-.toggle-review-form:hover {
-  color: #0056b3;
-}
-
-.toggle-subcategories {
-  cursor: pointer;
-  color: #007bff;
-  font-size: 13px;
-  margin: 20px 0;
-}
-
-.filter-container {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.selezione{
-  border-radius: 5px;
-
-}
-
-/* Stili per l'elemento delle recensioni */
-.reviews-list {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
-}
-
-.review-item {
-  padding: 15px;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.review-item h4 {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.review-item .fa-star {
-  color: rgba(205, 188, 188, 0.5); /* Colore dorato per le stelle */
-  margin-right: 2px;
-}
-
-.review-item .fa-star.checked {
-  color: gold;
-}
-
-.reset-filtro {
-  margin-top: 10px;
-  border: none;
-  background-color: orange;
-}
-
-.message-box{
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.alert-success{
-  background-color: #d4edda;
-  color: #155724;
-}
-
-.alert-danger{
-  background-color: #f8d7da;
-  color: #721c24
-}
-
-.review-stats {
-  margin: 20px 0;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.review-stats h3 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.review-stats ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.review-stats li {
-  margin-bottom: 5px;
-}
-
-
+  @import '../assets/styles/review.css';
 </style>

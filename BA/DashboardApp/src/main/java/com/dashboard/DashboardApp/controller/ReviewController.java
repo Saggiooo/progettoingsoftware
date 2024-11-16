@@ -60,4 +60,11 @@ public class ReviewController {
         //restituisco le stats al FE
         return ResponseEntity.ok(stats);
     }
+
+    //aggiungo metodo per cancellare una recensione
+    @DeleteMapping("/recensioni/{reviewId}")
+    public ResponseEntity<String> deleteReview(@PathVariable Integer reviewId){
+        reviewService.deleteReview(reviewId);
+        return ResponseEntity.ok("Recensione cancellata con successo");
+    }
 }

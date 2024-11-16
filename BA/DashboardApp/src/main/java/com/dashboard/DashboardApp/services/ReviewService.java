@@ -98,5 +98,9 @@ public class ReviewService {
         return stats;
     }
 
+    //deleteReview
+    public void deleteReview(Integer reviewId) {
+        reviewRepository.deleteById(reviewId);
+    }
 
 }

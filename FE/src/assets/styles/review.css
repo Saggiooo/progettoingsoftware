@@ -160,22 +160,29 @@ html, body {
     background-color: orange;
 }
 
-.message-box{
-    padding: 10px;
-    margin-bottom: 20px;
+
+.message-box {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
     border-radius: 5px;
-    text-align: center;
+    z-index: 1000;
     font-weight: bold;
+    text-align: center;
+    max-width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.alert-success{
+.alert-success {
     background-color: #d4edda;
     color: #155724;
 }
 
-.alert-danger{
+.alert-danger {
     background-color: #f8d7da;
-    color: #721c24
+    color: #721c24;
 }
 
 .review-stats {
@@ -206,4 +213,24 @@ html, body {
 
 .clickable:hover {
     color: #007bff;
+}
+
+.trash-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.trash-button:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.trash-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    display: block;
 }

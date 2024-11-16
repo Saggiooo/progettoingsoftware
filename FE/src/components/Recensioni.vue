@@ -112,7 +112,15 @@
     <div class="reviews-list row" ref="reviewsSection">
       <h3 class="col-12 text-center">Recensioni</h3>
       <div v-for="review in reviews" :key="review.reviewId" class="review-item">
-        <h4>{{ review.title }}</h4>
+        <h4>{{ review.title }}
+          <!-- Pulsante "Cancella" visibile solo se l'utente corrente ha scritto la recensione -->
+          <button
+              v-if="review.userId === this.userId"
+              class="trash-button"
+              @click="deleteReview(review.reviewId)"
+          > <img src="@/assets/img/trash.png" alt="f" class="trash-icon" />
+          </button>
+        </h4>
         <p>{{ review.userId }}</p>
         <p>{{formatDate(review.date)}}</p>
         <p>{{ review.text }}</p>
@@ -139,12 +147,12 @@ export default {
       category2Rating: null,
       category3Rating: null,
       showReviewForm: false,
-      showSubcategorySliders: false,
+      showSubcategorySliders: false,  //sotto categorie nascoste
       eventId: null,
       userId: null,
       reviews: [],  // Nuova proprietà per le recensioni
       filterRating: null,  // Valutazione per il filtro
-      dateOrder:'desc',
+      dateOrder:'desc',  //imposto di default desc come filtro
       message: '',
       messageType: '',
       averageRating: null,
@@ -154,42 +162,58 @@ export default {
   methods: {
     // Funzione per inviare la recensione al backend
     async submitReview() {
-      // Validazione iniziale
-      if (!this.title || !this.reviewText || this.generalRating === null) {
+      // Messaggi di errore specifici per i campi mancanti
+      if (!this.title && !this.reviewText) {
         this.displayMessage("Compila tutti i campi obbligatori prima di inviare la recensione.", "error");
-        return;
-      }
+      } else if (!this.title) {
+        this.displayMessage("Titolo della recensione mancante.", "error");
+      } else if (!this.reviewText) {
+        this.displayMessage("Testo della recensione mancante.", "error");
+      } else {
 
-      const reviewData = {
-        title: this.title,
-        text: this.reviewText,
-        generalRating: this.generalRating,
-        locationRating: this.category1Rating,
-        staffRating: this.category2Rating,
-        priceRating: this.category3Rating,
-        eventId: this.eventId,  // Include eventId
-        userId: this.userId,    // Include userId
-      };
+          const reviewData = {
+            title: this.title,
+            text: this.reviewText,
+            generalRating: this.generalRating,
+            locationRating: this.category1Rating,
+            staffRating: this.category2Rating,
+            priceRating: this.category3Rating,
+            eventId: this.eventId,  // Include eventId
+            userId: this.userId,    // Include userId
+          };
 
-      try {
-        const response = await axios.post('/api/recensioni', reviewData);  // POST al backend per salvare la recensione
-        console.log("Recensione pubblicata con successo!", response.data);
-        console.log("Dati recensione inviati:", reviewData);
-        this.displayMessage("Recensione inviata con successo!", "success");
-        this.resetForm();  // Resetta il modulo dopo l'invio
-        this.fetchReviews(); // Aggiorna le recensioni visualizzate
-        this.fetchStatistics(); // Aggiorna le statistiche visualizzate
-      } catch (error) {
-        console.error("Errore nel pubblicare la recensione", error);
-        this.displayMessage("Errore nel pubblicare la recensione", "error");
+        try {
+          const response = await axios.post('/api/recensioni', reviewData);  // POST al backend per salvare la recensione
+          console.log("Recensione pubblicata con successo!", response.data);  //debug nel log della console
+          console.log("Dati recensione inviati:", reviewData);  //debug nel log della console
+          this.displayMessage("Recensione inviata con successo!", "success");
+          this.resetForm();  // Resetta il modulo dopo l'invio
+          this.fetchReviews(); // Aggiorna le recensioni visualizzate
+          this.fetchStatistics(); // Aggiorna le statistiche visualizzate
+        } catch (error) {
+          console.error("Errore nel pubblicare la recensione", error);  //messaggio di errore in caso di mancato inserimento
+          this.displayMessage("Errore nel pubblicare la recensione", "error");
+        }
       }
     }
 ,
+    // Metodo per eliminare una recensione
+    async deleteReview(reviewId) {
+      try {
+        await axios.delete(`/api/recensioni/${reviewId}`); // API call per eliminare la recensione
+        this.displayMessage('Recensione cancellata con successo.', 'success');
+        this.fetchReviews(); // Aggiorna la lista delle recensioni
+        this.fetchStatistics();  //Aggiorna le statistiche
+      } catch (error) {
+        this.displayMessage('Errore durante la cancellazione della recensione.', 'error');
+      }
+    },
 
     displayMessage(msg, type){
       this.message = msg;
       this.messageType = type;
 
+      // imposto timeout di visualizzazione messaggio successo o errore nell'inserimento
       setTimeout(() =>{
         this.message = '';
       }, 3000);
@@ -267,7 +291,6 @@ export default {
     },
 
     //recupero le stats dal BE
-
     async fetchStatistics(){
       try {
         const response = await axios.get('api/recensioni/statistiche', {
@@ -294,6 +317,8 @@ export default {
       this.fetchReviews(); //recupero tutte le reviews
     }
 },
+
+  //al caricamneto della pagina voglio che vengano mostrate le recensioni e le statistiche
   async mounted() {
     await this.fetchIds();
     if (this.eventId) {

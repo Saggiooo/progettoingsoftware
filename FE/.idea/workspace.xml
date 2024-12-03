@@ -5,44 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6756e8e-13a5-441f-a87f-ebbe6093f2b1" name="Changes" comment="Modifiche alla pagina che mostra l'elenco degli eventi e aggiunta pagina sui dettagli dell'evento">
-      <change afterPath="$PROJECT_DIR$/src/components/EventDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/.bin/esbuild" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/.bin/esbuild.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/.bin/esbuild.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/.package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/.vite/deps_temp_a70dd3e6/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/@esbuild/win32-x64/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/@esbuild/win32-x64/esbuild.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/@esbuild/win32-x64/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/esbuild/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/esbuild/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/esbuild/bin/esbuild" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/esbuild/install.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/esbuild/lib/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/esbuild/lib/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_modules/esbuild/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/axios.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chart__js_auto.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-P2LSHJDD.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-P2LSHJDD.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-P2LSHJDD.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-P2LSHJDD.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/chunk-WH3SMVHF.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/dayjs.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/dayjs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/dayjs.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/dayjs.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/v-calendar.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue-router.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.vite/deps/vue.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TuttigliEventi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TuttigliEventi.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +99,9 @@
       <workItem from="1731753603226" duration="2519000" />
       <workItem from="1733238397533" duration="6831000" />
       <workItem from="1733250162692" duration="4642000" />
-      <workItem from="1733254842907" duration="643000" />
+      <workItem from="1733254842907" duration="698000" />
+      <workItem from="1733255652478" duration="28000" />
+      <workItem from="1733255854520" duration="51000" />
     </task>
     <task id="LOCAL-00001" summary="prova">
       <option name="closed" value="true" />
@@ -170,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730370713311</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Modifiche alla pagina che mostra l'elenco degli eventi e aggiunta pagina sui dettagli dell'evento">
+      <option name="closed" value="true" />
+      <created>1733255504642</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733255504642</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

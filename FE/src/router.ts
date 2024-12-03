@@ -5,6 +5,7 @@ import InfoClienti from './pages/InformazioniClienti.vue';
 import Impostazioni from './pages/Impostazioni.vue';
 import GestioneAd from './pages/GestioneAd.vue';
 import Recensioni from './pages/Recensioni.vue';
+import EventDetail from './components/EventDetail.vue';
 
 const routes = [
   { path: '/dashboard-statistiche', component: StatGenerali },
@@ -13,6 +14,7 @@ const routes = [
   { path: '/dashboard-gestione-ads', component: GestioneAd },
   { path: '/dashboard-impostazioni', component: Impostazioni },
   { path: '/recensioni', component: Recensioni },
+  {path: '/event/:id', name: 'EventDetail', component: EventDetail,},
   { path: '/', redirect: '/dashboard-statistiche' }
 ];
 

@@ -9,10 +9,10 @@
       <!-- Inizio del contenuto della pagina-->
 
       <div>
-            <router-link to="/Recensioni">
-              <button> Recensioni</button>
-            </router-link>
-        </div>
+        <router-link to="/Recensioni">
+          <button> Recensioni</button>
+        </router-link>
+      </div>
 
       <!-- Inserisci l'intestazione "Nav.vue"-->
       <div>
@@ -22,11 +22,13 @@
       <!-- Contenitore per gli eventi -->
       <div class="event-container">
         <ul id="eventList">
-          <!-- Ciclo attraverso gli eventi attuali e visualizzo ciascuno come un elemento di lista -->
+          <!-- Ciclo attraverso gli eventi attuali e li rendo cliccabili con un router-link -->
           <li v-for="event in currentEvents" :key="event.id" class="event-item">
-            <h3>{{ event.name }}</h3>
-            <p>{{ event.date }}</p>
-            <p>{{ event.location }}</p>
+            <router-link :to="{ path: `/event/${event.id}` }" class="event-link">
+              <h3>{{ event.name }}</h3>
+              <p>{{ event.date }}</p>
+              <p>{{ event.location }}</p>
+            </router-link>
           </li>
         </ul>
       </div>
@@ -118,6 +120,8 @@ const nextPage = () => {
 .fullpage {
   display: flex;
   flex-direction: row;
+  background-color: #f5f5f5; /* Sfondo generale */
+  min-height: 100vh;
 }
 
 /* Stile per il contenitore del contenuto della pagina */
@@ -125,6 +129,7 @@ const nextPage = () => {
   flex: 1;
   padding: 20px;
   max-width: 2000px;
+  background-color: #ffffff; /* Sfondo bianco per il contenuto */
 }
 
 /* Stile per il contenitore degli eventi */
@@ -134,15 +139,23 @@ const nextPage = () => {
 
 /* Stile per ciascun elemento della lista di eventi */
 .event-item {
-  background-color: #f9f9f9;
-  padding: 10px;
+  background-color: #fff;
+  padding: 15px;
   margin-right: 10px; /* Aggiunge spazio tra gli elementi */
   margin-bottom: 10px; /* Aggiunge spazio tra le righe */
+
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 12px;
   box-sizing: border-box;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+  transition: transform 0.2s, box-shadow 0.2s; /* Effetto hover */
   width: calc(50% - 10px); /* Imposta la larghezza degli elementi al 50% del container con lo spazio tra gli elementi */
   float: left; /* Allinea gli elementi a sinistra */
+}
+
+.event-item:hover {
+  transform: translateY(-30px); /* Solleva l'elemento */
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.2); /* Ombra più profonda */
 }
 
 /* Rimuove i punti elenco e padding dagli ul */
@@ -154,35 +167,37 @@ ul {
 /* Stile per gli header h3 */
 h3 {
   margin: 0 0 5px 0;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* Stile per i paragrafi */
 p {
   margin: 0;
   color: #666;
+  font-size: 16px;
 }
 
 /* Stile per la sezione di paginazione */
 .pagination {
   margin-top: 20px;
   text-align: center;
-  position: sticky;
-  bottom: 15px;
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* Stile per i bottoni di paginazione */
 .pagination button {
   margin: 0 5px;
-  padding: 8px 15px;
-  background-color: #000000; /* Colore di sfondo */
-  color: white; /* Colore del testo */
-  border: none; /* Rimuove il bordo */
-  border-radius: 4px; /* Bordo arrotondato */
-  cursor: pointer; /* Cambia il cursore al passaggio */
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 /* Stile per i bottoni di paginazione al passaggio del mouse */
@@ -192,9 +207,20 @@ p {
 
 /* Stile per l'informazione della pagina corrente */
 .page-info {
-  margin: 5px 0 3px;
+  margin: 0 10px;
   font-weight: bold;
-  color: black; /* Colore del testo */
-  font-size: 18px; /* Ingrandisce il font */
+  color: #333;
+  font-size: 18px;
+}
+
+
+.event-link {
+  text-decoration: none;
+  color: darkslategray; /* Mantiene il colore del testo */
+}
+
+.event-link:hover {
+  text-decoration: none;
+  color: indianred; /* Evita che diventi blu al passaggio del mouse */
 }
 </style>

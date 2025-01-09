@@ -1,4 +1,4 @@
-n<template>
+<template>
   <div class="sidebar">
     <div>
         <a href="/"><img src="@/assets/img/logosocial.png" alt="Logo del Social" class="logo"></img></a>
@@ -8,7 +8,6 @@ n<template>
         <li :class="{ active: isRouteActive('/dashboard-statistiche') }"><a href="/dashboard-statistiche"><img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="icona"><span class="title">Statistiche generali</span></a></li>
         <li :class="{ active: isRouteActive('/dashboard-eventi') }"><a href="/dashboard-eventi"><img src="@/assets/img/eventi.png" alt="Icona Gestione Eventi" class="icona"><span class="title">Tutti gli eventi</span></a></li>
         <li :class="{ active: isRouteActive('/dashboard-clienti') }"><a href="/dashboard-clienti"><img src="@/assets/img/clienti.png" alt="Icona Gestione Clienti" class="icona"><span class="title">Informazioni sui Clienti</span></a></li>
-        <li :class="{ active: isRouteActive('/dashboard-gestione-ads')}"><a href="/dashboard-gestione-ads"><img src="@/assets/img/ad.png" alt="Icona pubblicità" class="icona"><span class="title">Gestione pubblicità</span></a></li>
         <li :class="{ active: isRouteActive('/dashboard-impostazioni')}"><a href="/dashboard-impostazioni"><img src="@/assets/img/impostazioni.png" alt="Icona Impostazioni" class="icona"><span class="title">Impostazioni</span></a></li>
         <li><a href="#"><img src="@/assets/img/esci.png" alt="Icona Impostazioni" class="icona"><span class="title">Esci</span></a></li>
     </ul>

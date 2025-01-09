@@ -1,67 +1,79 @@
 <template>
-  <div class="event-detail">
-    <h2>{{ event.name }}</h2>
-    <p><strong>Date:</strong> {{ event.date }}</p>
-    <p><strong>Location:</strong> {{ event.location }}</p>
-    <p><strong>Description:</strong> {{ event.description }}</p>
-    <p><strong>Organizer:</strong> {{ event.organizer }}</p>
+  <div>
+    <Sidebar />
 
-
-    <button @click="goBack" class="back-button">
-      <i class="fas fa-arrow-left"></i> Torna all'elenco
-    </button>
   </div>
+  <div class="contenutopagina">
+    <div class="event-detail">
+      <h2>{{ event.name }}</h2>
+      <p><strong>Date:</strong> {{ event.date }}</p>
+      <p><strong>Location:</strong> {{ event.location }}</p>
+      <p><strong>Description:</strong> {{ event.description }}</p>
+      <p><strong>Organizer:</strong> {{ event.organizer }}</p>
+
+
+      <button @click="goBack" class="back-button">
+        <i class="fas fa-arrow-left"></i> Torna all'elenco
+
+      </button>
+      <Recensioni />
+    </div>
+  </div>
+
+
 </template>
 
-<script setup lang="ts">
-import { ref, onMounted } from 'vue';
+<script lang="ts">
+import { defineComponent } from 'vue';
 import axios from 'axios';
 import { useRoute, useRouter } from 'vue-router';
+import Sidebar from "@/components/Sidebar.vue";
+import Recensioni from "@/components/Recensioni.vue";
 
-// Ottieni l'ID dell'evento dalla rotta
-const route = useRoute();
-const eventId = route.params.id as string; // Assicurati che l'ID sia una stringa
+export default defineComponent({
+  name: 'EventDetails',
+  components: {Recensioni, Sidebar},
+  data() {
+    return {
+      eventId: null as string | null,
+      event: {
+        name: '',
+        date: '',
+        location: '',
+        description: '',
+        organizer: '',
+      },
+    };
+  },
+  methods: {
+    // Funzione per caricare i dettagli dell'evento
+    async fetchEventDetail() {
+      try {
+        const response = await axios.get('http://localhost:3000/api/events');
+        const eventData = response.data.find((event: { id: string }) => event.id === this.eventId);
 
-// Variabile reattiva per memorizzare i dettagli dell'evento
-const event = ref<{
-  name: string;
-  date: string;
-  location: string;
-  description: string;
-  organizer: string;
-}>({
-  name: '',
-  date: '',
-  location: '',
-  description: '',
-  organizer: ''
+        if (eventData) {
+          this.event = eventData; // Salva i dati dell'evento
+        } else {
+          console.error('Event not found');
+        }
+      } catch (error) {
+        console.error('Error fetching event details:', error);
+      }
+    },
+    // Funzione per tornare indietro alla pagina precedente
+    goBack() {
+      this.$router.back();
+    },
+  },
+  mounted() {
+    const route = useRoute();
+    this.eventId = route.params.id as string; // Ottieni l'ID dalla rotta
+    this.fetchEventDetail(); // Carica i dettagli dell'evento
+  },
 });
-
-// Funzione per caricare i dettagli dell'evento
-const fetchEventDetail = async () => {
-  try {
-    const response = await axios.get('http://localhost:3000/api/events');
-    const eventData = response.data.find((event: { id: string }) => event.id === eventId);
-
-    if (eventData) {
-      event.value = eventData;  // Se trova l'evento, salva i dati
-    } else {
-      console.error('Event not found');
-    }
-  } catch (error) {
-    console.error('Error fetching event details:', error);
-  }
-};
-
-// Carica i dettagli quando il componente è montato
-onMounted(fetchEventDetail);
-
-// Funzione per tornare indietro alla pagina precedente
-const router = useRouter();
-const goBack = () => {
-  router.back(); // Torna alla pagina precedente
-};
 </script>
+
 
 <style scoped>
 /* Stile per il contenitore principale del dettaglio evento */

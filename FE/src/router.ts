@@ -13,8 +13,7 @@ const routes = [
   { path: '/dashboard-clienti', component: InfoClienti },
   { path: '/dashboard-gestione-ads', component: GestioneAd },
   { path: '/dashboard-impostazioni', component: Impostazioni },
-  { path: '/recensioni', component: Recensioni },
-  {path: '/event/:id', name: 'EventDetail', component: EventDetail,},
+  { path: '/Recensioni', component: Recensioni },
   { path: '/', redirect: '/dashboard-statistiche' }
 ];
 

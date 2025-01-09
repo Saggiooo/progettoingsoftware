@@ -38,7 +38,6 @@ a {
 
 .contenutopagina{
     margin-left: 320px;
-    height: 200vh;
 }
 
 
@@ -346,4 +345,11 @@ a {
     border-radius: 18px;
     width: auto;
 
+}
+
+.cardbox .card .textstatsdashboard{
+    position: relative;
+    font-weight: 800;
+    font-size: 1em;
+    color: var(--coloretestibox);
 }

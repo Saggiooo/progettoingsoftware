@@ -1,4 +1,21 @@
 <template>
+  <div>
+    <Sidebar />
+  </div>
+  <div class="contenutopagina">
+    <div class="event-detail">
+      <h2>TEst</h2>
+      <p><strong>Date:</strong> Test</p>
+      <p><strong>Location:</strong>Test</p>
+      <p><strong>Description:</strong>Te</p>
+      <p><strong>Organizer:</strong> test</p>
+
+
+      <button @click="goBack" class="back-button">
+        <i class="fas fa-arrow-left"></i> Torna all'elenco
+
+      </button>
+      </div>
   <div class="top-bar">
     <div class="container">
       <div class="row align-items-center">
@@ -131,13 +148,16 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
 import axios from 'axios';
 import dayjs from 'dayjs';
+import Sidebar from "@/components/Sidebar.vue";
 
 export default {
+  components: {Sidebar},
   data() {
     return {
       title: '',
@@ -279,10 +299,13 @@ export default {
     // Recupera gli ID da Mockoon tramite il backend
     async fetchIds() {
       try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const eventId = urlParams.get('Id'); // Prendi l'ID dalla query
+        console.log("ID recuperato dall'URL:", eventId);
+        this.eventId=eventId;
         const response = await axios.get('http://localhost:3000/api/ids');  // Endpoint BE per ottenere IDs
         // Aggiungi un log per vedere la risposta
         console.log("Risposta ricevuta:", response);
-        this.eventId = response.data.eventId;
         this.userId = response.data.userId;
         await this.fetchReviews(); //una volta recuperato l'id devo recuperare anche tutte le recensioni
       } catch (error) {

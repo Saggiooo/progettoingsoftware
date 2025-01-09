@@ -1,168 +1,122 @@
 <script setup lang="ts">
-
-
-
-/* Inseriamo in una variabile reattiva chiamata data */
-
-
-import axios from 'axios';
-import { ref, watch } from 'vue';
-const data1 = ref(0);
-
-
-  axios.get('/api/allData')
-  .then(response => {
-    const data = response.data;
-    const partecipanti = data.partecipanti;
-    const utenti = data.utenti;
-    const valutazioni = data.valutazioni;
-    const coso = data.coso;
-    
-    // Aggiorna i placeholder nel HTML con i valori ottenuti
-    document.getElementById('partecipanti-placeholder').innerText = `${partecipanti}`;
-    document.getElementById('utenti-placeholder').innerText = `${utenti}`;
-    document.getElementById('valutazioni-placeholder').innerText = `${valutazioni}`;
-    document.getElementById('coso-placeholder').innerText = `${coso}`;
-
-
-    // Ora puoi utilizzare partecipanti e utenti come desideri
-    console.log("Partecipanti:", partecipanti);
-    console.log("Utenti:", utenti);
-    console.log("valutazioni:", partecipanti);
-    console.log("coso:", utenti);
-  })
-  .catch(error => {
-    console.error('Si è verificato un errore durante il recupero dei dati:', error);
-  });
-
-
-
-document.addEventListener('DOMContentLoaded', async () => {
-            const eventList = document.getElementById('eventList');
-            const eventTemplate = document.getElementById('eventTemplate');
-
-            if (!eventList || !eventTemplate) {
-                console.error('One or both of the elements are missing.');
-                return;
-            }
-
-            try {
-                const response = await axios.get('/api/callPROVA');
-                const events = response.data;
-
-                events.forEach(event => {
-                    const listItem = document.importNode(eventTemplate.content, true).querySelector('li');
-                    listItem.textContent = `${event.name} - ${event.date}`;
-                    eventList.appendChild(listItem);
-                });
-            } catch (error) {
-                console.error('Error fetching events:', error);
-            }
-        });
-
-
-
-
-
-
-
-
 import Sidebar from './Sidebar.vue';
 import Nav from './Nav.vue';
-
+import axios from 'axios';
+import { ref, onMounted } from 'vue';
 import Chart from 'chart.js/auto';
-import { onMounted } from 'vue';
 
-const labels1 = [
-    'Gennaio',
-    'Febbraio',
-    'Marzo',
-    'Aprile',
-    'Maggio',
-    'Giugno',
-    'Luglio',
-    'Agosto',
-    'Settembre',
-    'Ottobre',
-    'Novembre',
-    'Dicembre'
-];
+// Variabili reattive per i dati
+const partecipanti = ref(0);
+const utenti = ref(0);
+const valutazioni = ref(0);
+const coso = ref(0);
 
-const labels2 = [
-    'Evento di benvenuto',
-    'Evento ciao',
-    'Evento estivo',
-    'Mattinata insieme',
-    'Incontro con il presidente',
-    'Sessione di cuicna',
-    'Evento',
-    'Agosto',
-    'Settembre',
-    'Lezioni di cucina',
-    'Evento al portico di Pino',
-    'Evento In compagnia'
-];
+const labels1 = ref<string[]>([]); // Per i nomi degli eventi (grafico a linee)
+const dataPartecipanti1 = ref<number[]>([]); // Per i partecipanti (grafico a linee)
 
+const labels2 = ref<string[]>([]); // Per i nomi degli eventi (grafico a torta)
+const dataPartecipanti2 = ref<number[]>([]); // Per i partecipanti (grafico a torta)
 
-const data = {
-    labels: labels1,
-    datasets: [{
-        label: 'Il mio dataset',
-        backgroundColor: '#1786FF', // bianco con opacità del 50%
-        //backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#8A2BE2', '#FF7F50', '#20B2AA', '#9370DB', '#FFD700', '#32CD32', '#4682B4', '#BA55D3', '#FFA07A'], // Cambia i colori dei segmenti del grafico a torta
-        borderColor: '#1786FF', // blu
-        borderWidth: 2,
-        data: [0, 10, 5, 6, 20, 30, 45],
-    }]
-};
+const eventList = ref<any[]>([]);
 
-const data2 = {
-    labels: labels2,
-    datasets: [{
-        label: 'Il mio dataset',
-        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#8A2BE2', '#FF7F50', '#20B2AA', '#9370DB', '#FFD700', '#32CD32', '#4682B4', '#BA55D3', '#FFA07A'],
-        borderColor: '#ffffff', // colore del bordo del segmento
-        borderWidth: 2,
-        data: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120],
-    }]
-};
+// Recupero dati per i placeholder e grafici
+onMounted(() => {
+  axios.get('/api/statsinfo')
+      .then(response => {
+        const data = response.data;
+        partecipanti.value = data.partecipantitotali;
+        utenti.value = data.mediaPartecipanti;
+        valutazioni.value = data.eventoConMassimiPartecipanti;
+        coso.value = data.eventoConMinimiPartecipanti;
 
-const config2 = {
-    type: 'pie',
-    data: data2,
-    options: {}
-};
+        // Aggiorna i placeholder con i dati
+        document.getElementById('partecipanti-placeholder')!.innerText = `${partecipanti.value}`;
+        document.getElementById('utenti-placeholder')!.innerText = `${utenti.value}`;
+        document.getElementById('valutazioni-placeholder')!.innerText = `${valutazioni.value}`;
+        document.getElementById('coso-placeholder')!.innerText = `${coso.value}`;
 
+        console.log("Partecipanti:", partecipanti.value);
+        console.log("Utenti:", utenti.value);
+        console.log("Valutazioni:", valutazioni.value);
+        console.log("Coso:", coso.value);
+      })
+      .catch(error => {
+        console.error('Si è verificato un errore durante il recupero dei dati:', error);
+      });
 
+  // Recupero degli eventi per popolare la lista
+  axios.get('/api/callPROVA')
+      .then(response => {
+        eventList.value = response.data;
+      })
+      .catch(error => {
+        console.error('Errore nel recupero degli eventi:', error);
+      });
 
-const config = {
-    type: 'line',
-    data: data,
-    options: {}
-};
+  // Recupero informazioni per i grafici
+  axios.get('/api/eventinfo')
+      .then(response => {
+        const events = response.data;
+        events.forEach((event: any) => {
+          labels1.value.push(event.eventName);
+          dataPartecipanti1.value.push(event.partecipanti);
 
+          labels2.value.push(event.eventName);
+          dataPartecipanti2.value.push(event.partecipanti);
+        });
 
-    onMounted(() => {
-        const myChart = new Chart(
-            document.getElementById('myChart'),
-            config
-        );
+        // Configurazione per il grafico a linee
+        const dataLine = {
+          labels: labels1.value,
+          datasets: [{
+            label: 'Partecipanti per Evento',
+            backgroundColor: '#1786FF',
+            borderColor: '#1786FF',
+            borderWidth: 2,
+            data: dataPartecipanti1.value,
+          }]
+        };
 
-        const myChart2 = new Chart(
-        document.getElementById('myChart2'),
-        config2
-    );
-        window.addEventListener('resize', () => myChart.resize());
-    })
+        const configLine = {
+          type: 'line',
+          data: dataLine,
+          options: {}
+        };
 
-import { createApp } from 'vue';
-import VCalendar from 'v-calendar';
+        new Chart(document.getElementById('myChart') as HTMLCanvasElement, configLine);
 
-createApp().use(VCalendar);
+        // Configurazione per il grafico a torta
+        const dataPie = {
+          labels: labels2.value,
+          datasets: [{
+            label: 'Partecipanti per Evento',
+            backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#8A2BE2', '#FF7F50', '#20B2AA', '#9370DB', '#FFD700', '#32CD32', '#4682B4', '#BA55D3', '#FFA07A'],
+            borderColor: '#ffffff',
+            borderWidth: 2,
+            data: dataPartecipanti2.value,
+          }]
+        };
 
+        const configPie = {
+          type: 'pie',
+          data: dataPie,
+          options: {}
+        };
 
+        new Chart(document.getElementById('myChart2') as HTMLCanvasElement, configPie);
 
+        // Rendi il grafico responsive
+        window.addEventListener('resize', () => {
+          const charts = [myChart, myChart2];
+          charts.forEach(chart => chart.resize());
+        });
+      })
+      .catch(error => {
+        console.error('Errore nel recupero dei dati per i grafici:', error);
+      });
+});
 </script>
+
 
 
 
@@ -185,7 +139,7 @@ createApp().use(VCalendar);
              <div class="card">
                 <div>
                     <div class="numbers"><div id="partecipanti-placeholder">{{ partecipanti }}</div></div>
-                    <div class="cardName">Partecipanti</div>
+                    <div class="cardName">Partecipanti Totali</div>
                 </div>
                 <div class="iconBx">
                     <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
@@ -195,7 +149,7 @@ createApp().use(VCalendar);
              <div class="card">
                 <div>
                     <div class="numbers"><div id="utenti-placeholder">{{ utenti }}</div></div>    
-                    <div class="cardName">Prova</div>
+                    <div class="cardName">Media Partecipanti</div>
                 </div>
                  <div class="iconBx">
                     <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
@@ -204,8 +158,8 @@ createApp().use(VCalendar);
 
             <div class="card">
                 <div>
-                    <div class="numbers"><div id="valutazioni-placeholder">{{ valutazioni }}</div></div>
-                    <div class="cardName">Test</div>
+                    <div class="textstatsdashboard"><div id="valutazioni-placeholder">{{ valutazioni }}</div></div>
+                    <div class="cardName">Il più prenotato</div>
                 </div>
                  <div class="iconBx">
                     <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
@@ -214,8 +168,8 @@ createApp().use(VCalendar);
 
             <div class="card">
                 <div>
-                    <div class="numbers"><div id="coso-placeholder">{{ coso }}</div></div>
-                    <div class="cardName">Number</div>
+                    <div class="textstatsdashboard"><div id="coso-placeholder">{{ coso }}</div></div>
+                    <div class="cardName">Il meno prenotato</div>
                 </div>
                  <div class="iconBx">
                     <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
@@ -232,11 +186,7 @@ createApp().use(VCalendar);
                 <canvas class="graficoUno" id="myChart2"></canvas>
 
             </div>
-            <div class="box-eventi">
-                <div class="listaeventi">
-            <ul id="eventList">
-        <!-- Event items will be added here -->
-    </ul>
+
 
     <!-- Template for event item -->
     <template id="eventTemplate">
@@ -246,9 +196,6 @@ createApp().use(VCalendar);
     <!-- fine del contenuto della pagina-->
     </div>
 
-            </div>
-        </div>
-        
 </div>
 </template>
 

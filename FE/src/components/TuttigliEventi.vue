@@ -24,12 +24,14 @@
         <ul id="eventList">
           <!-- Ciclo attraverso gli eventi attuali e li rendo cliccabili con un router-link -->
           <li v-for="event in currentEvents" :key="event.id" class="event-item">
-            <router-link :to="{ path: `/event/${event.id}` }" class="event-link">
-              <h3>{{ event.name }}</h3>
-              <p>{{ event.date }}</p>
-              <p>{{ event.location }}</p>
-            </router-link>
-          </li>
+              <router-link :to="`/Recensioni?Id=${event.id}`" class="event-link">
+                <h3>{{ event.name }}</h3>
+                <p>{{ event.date }}</p>
+                <p>{{ event.location }}</p>
+              </router-link>
+            </li>
+
+
         </ul>
       </div>
       <div>
@@ -154,8 +156,8 @@ const nextPage = () => {
 }
 
 .event-item:hover {
-  transform: translateY(-30px); /* Solleva l'elemento */
-  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.2); /* Ombra più profonda */
+  transform: scale(1.02); /* Ingrossa l'elemento del 10% */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Ombra più leggera */
 }
 
 /* Rimuove i punti elenco e padding dagli ul */
@@ -202,7 +204,7 @@ p {
 
 /* Stile per i bottoni di paginazione al passaggio del mouse */
 .pagination button:hover {
-  background-color: #ff8000; /* Cambia il colore di sfondo al passaggio del mouse */
+  background-color: #ffa600; /* Cambia il colore di sfondo al passaggio del mouse */
 }
 
 /* Stile per l'informazione della pagina corrente */
@@ -221,6 +223,6 @@ p {
 
 .event-link:hover {
   text-decoration: none;
-  color: indianred; /* Evita che diventi blu al passaggio del mouse */
+  color: #ad6738; /* Evita che diventi blu al passaggio del mouse */
 }
 </style>

@@ -1,9 +1,7 @@
 package com.dashboard.DashboardApp.controller;
 
-import com.dashboard.DashboardApp.models.IdsResponse;
 import com.dashboard.DashboardApp.models.Review;
 import com.dashboard.DashboardApp.services.ReviewService;
-import com.dashboard.DashboardApp.services.IdsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.http.HttpStatus;
@@ -18,52 +16,47 @@ import java.util.Map;
 public class ReviewController {
 
     private final ReviewService reviewService;
-    private final IdsService idsService;
 
     @Autowired
-    public ReviewController(ReviewService reviewService, IdsService idsService) {
+    public ReviewController(ReviewService reviewService) {
         this.reviewService = reviewService;
-        this.idsService = idsService;
     }
 
-    // Endpoint che recupera gli id da Mockoon
-    @GetMapping("/ids")
-    public IdsResponse getIds(){
-        return idsService.fetchIds();
-    }
-
-    //recupero le recensioni filtrate
+    // Recupero le recensioni filtrate
     @GetMapping("/recensioni")
-    public List<Review> getReviews(@RequestParam Integer eventId, @RequestParam(required = false) Integer generalRating, @RequestParam(defaultValue = "desc") String dateOrder){
-        if(generalRating != null){
-            //filtro per il rating impostato e per ordine data
+    public List<Review> getReviews(@RequestParam Integer eventId, @RequestParam(required = false) Integer generalRating, @RequestParam(defaultValue = "desc") String dateOrder) {
+        if (generalRating != null) {
+            // Filtro per rating e per ordine data
             return reviewService.getReviewsByEventAndRating(eventId, generalRating, dateOrder);
         }
-        // se il rating non è impostato filtro solo per data
+        // Se il rating non è impostato, filtro solo per data
         return reviewService.getReviewsByEvent(eventId, dateOrder);
     }
 
-    // crea la review
+    // creo la recensione da salvare
     @PostMapping("/recensioni")
     public Mono<ResponseEntity<Review>> createReview(@RequestBody Review review) {
+        // Aggiungiamo dei log per verificare i dati che arrivano
+        System.out.println("Dati ricevuti nel BE: " + review.toString());
+
         return reviewService.saveReview(review)
                 .map(savedReview -> ResponseEntity.status(HttpStatus.CREATED).body(savedReview))
                 .defaultIfEmpty(ResponseEntity.badRequest().build());
     }
 
-    //aggiungo un endpoint per ottenere le stats delle recensioni
+    // Endpoint per ottenere le statistiche delle recensioni
     @GetMapping("/recensioni/statistiche")
-    public ResponseEntity<Map<String, Object>> getReviewStatistics(@RequestParam Integer eventId){
-        //calcolo le stats delle recensioni per un determinato evento
+    public ResponseEntity<Map<String, Object>> getReviewStatistics(@RequestParam Integer eventId) {
+        // Calcolo le statistiche delle recensioni per un determinato evento
         Map<String, Object> stats = reviewService.calculateReviewStatistics(eventId);
 
-        //restituisco le stats al FE
+        // Restituisco le statistiche al frontend
         return ResponseEntity.ok(stats);
     }
 
-    //aggiungo metodo per cancellare una recensione
+    // Metodo per cancellare una recensione
     @DeleteMapping("/recensioni/{reviewId}")
-    public ResponseEntity<String> deleteReview(@PathVariable Integer reviewId){
+    public ResponseEntity<String> deleteReview(@PathVariable Integer reviewId) {
         reviewService.deleteReview(reviewId);
         return ResponseEntity.ok("Recensione cancellata con successo");
     }

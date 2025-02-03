@@ -24,12 +24,12 @@
         <ul id="eventList">
           <!-- Ciclo attraverso gli eventi attuali e li rendo cliccabili con un router-link -->
           <li v-for="event in currentEvents" :key="event.id" class="event-item">
-              <router-link :to="`/Recensioni?Id=${event.id}`" class="event-link">
-                <h3>{{ event.name }}</h3>
-                <p>{{ event.date }}</p>
-                <p>{{ event.location }}</p>
-              </router-link>
-            </li>
+            <router-link :to="`/Recensioni?eventId=${event.id}`" class="event-link">
+              <h3>{{ event.name }}</h3>
+              <p>{{ event.date }}</p>
+              <p>{{ event.location }}</p>
+            </router-link>
+          </li>
 
 
         </ul>

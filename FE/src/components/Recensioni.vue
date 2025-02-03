@@ -3,151 +3,156 @@
     <Sidebar />
   </div>
   <div class="contenutopagina">
-    <div class="event-detail">
-      <h2>TEst</h2>
-      <p><strong>Date:</strong> Test</p>
-      <p><strong>Location:</strong>Test</p>
-      <p><strong>Description:</strong>Te</p>
-      <p><strong>Organizer:</strong> test</p>
+    <div class="event-detail" >
 
-
-      <button @click="goBack" class="back-button">
-        <i class="fas fa-arrow-left"></i> Torna all'elenco
-
-      </button>
+      <div class="namedesctiprion">
+      <h2>{{ event.name }}</h2>
+        <p>{{ event.description }}</p>
       </div>
-  <div class="top-bar">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col">
-          <button @click="goBack" class="back-button">
-            <i class="fas fa-arrow-left"></i>
-          </button>
+
+      <div class="vertical-line"></div>
+
+      <div class="otherinfoevent">
+      <p><strong>Data:</strong> {{ event.date }}</p>
+      <p><strong>Luogo:</strong> {{ event.location }}</p>
+
+      <p><strong>Gestione:</strong> {{ event.organizer }}</p>
+      </div>
+    </div>
+
+
+    <button @click="goBack" class="back-button">
+      <i class="fas fa-arrow-left"></i> Torna all'elenco
+    </button>
+
+
+    <div class="page-container">
+
+      <div v-if="message" :class="['alert', messageType === 'success' ? 'alert-success' : 'alert-danger']" class="message-box">
+        {{ message }}
+      </div>
+      <!-- Contenuto della pagina -->
+      <div class="recensioni">
+        <div class="header-review">
+            <h2>Recensioni</h2>
+            <div @click="toggleReviewForm" class="toggle-review-form">Scrivi una recensione</div>
         </div>
-        <div class="col title-text">
-          Recensioni evento {{ eventId }}
-        </div>
-        <div class="col"></div> <!-- Spazio vuoto per centrare la barra -->
-      </div>
-    </div>
-  </div>
+            <div v-if="showReviewForm" class="recensioni-form">
+              <form @submit.prevent="submitReview">
+                <div class="form-group">
+                  <input type="text" id="title" v-model="title" class="form-control" placeholder="Titolo Recensione"/>
+                </div>
+                <div class="form-group">
+                  <textarea id="reviewText" v-model="reviewText" class="form-control" placeholder="Testo Recensione"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="generalRating">Voto evento:</label>
+                  <div class="star-rating">
+                    <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= generalRating}" @click="setRating('generalRating', star)"></span>
+                    <span>{{ generalRating }}</span>
+                  </div>
+                </div>
+                <div @click="toggleSubcategorySliders" class="toggle-subcategories">
+                  Vota altro
+                </div>
+                <div v-if="showSubcategorySliders">
+                  <div class="form-group">
+                    <label for="category1Rating">Location:</label>
+                    <div class="star-rating">
+                      <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= category1Rating}" @click="setRating('category1Rating', star)"></span>
+                      <span>{{ category1Rating }}</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="category2Rating">Staff:</label>
+                    <div class="star-rating">
+                      <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= category2Rating}" @click="setRating('category2Rating', star)"></span>
+                      <span>{{ category2Rating }}</span>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="category3Rating">Prezzo:</label>
+                    <div class="star-rating">
+                      <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= category3Rating}" @click="setRating('category3Rating', star)"></span>
+                      <span>{{ category3Rating }}</span>
+                    </div>
+                  </div>
+                </div>
+                <button @click.prevent="submitReview" class="btn btn-success submit-button">Pubblica</button>
+                <button @click.prevent="resetForm" class="btn btn-danger reset-button">Resetta</button>
+              </form>
+            </div>
 
-  <div class="page-container">
-
-    <div v-if="message" :class="['alert', messageType === 'success' ? 'alert-success' : 'alert-danger']" class="message-box">
-      {{ message }}
-    </div>
-    <!-- Contenuto della pagina -->
-    <div class="recensioni">
-      <div @click="toggleReviewForm" class="toggle-review-form">Scrivi una recensione</div>
-      <div v-if="showReviewForm" class="recensioni-form">
-        <form @submit.prevent="submitReview">
-          <div class="form-group">
-            <input type="text" id="title" v-model="title" class="form-control" placeholder="Titolo Recensione"/>
-          </div>
-          <div class="form-group">
-            <textarea id="reviewText" v-model="reviewText" class="form-control" placeholder="Testo Recensione"></textarea>
-          </div>
-          <div class="form-group">
-            <label for="generalRating">Voto evento:</label>
-            <div class="star-rating">
-              <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= generalRating}" @click="setRating('generalRating', star)"></span>
-              <span>{{ generalRating }}</span>
-            </div>
-          </div>
-          <div @click="toggleSubcategorySliders" class="toggle-subcategories">
-            Vota altro
-          </div>
-          <div v-if="showSubcategorySliders">
-            <div class="form-group">
-              <label for="category1Rating">Location:</label>
-              <div class="star-rating">
-                <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= category1Rating}" @click="setRating('category1Rating', star)"></span>
-                <span>{{ category1Rating }}</span>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="category2Rating">Staff:</label>
-              <div class="star-rating">
-                <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= category2Rating}" @click="setRating('category2Rating', star)"></span>
-                <span>{{ category2Rating }}</span>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="category3Rating">Prezzo:</label>
-              <div class="star-rating">
-                <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= category3Rating}" @click="setRating('category3Rating', star)"></span>
-                <span>{{ category3Rating }}</span>
-              </div>
-            </div>
-          </div>
-          <button @click.prevent="submitReview" class="btn btn-success submit-button">Pubblica</button>
-          <button @click.prevent="resetForm" class="btn btn-danger reset-button">Resetta</button>
-        </form>
       </div>
-    </div>
-    <div class="filter-container">
-      <!-- filter rating -->
-      <label for="filterRating">Filtra per valutazione:</label>
-      <div class="star-rating">
+
+<div class="statisticheandfilter">
+      <!-- sezione per vedere la media delle recensioni -->
+      <div class="review-stats">
+        <h5>Statistiche Recensioni</h5>
+        <ul>
+          <!-- Itera attraverso ogni livello di rating, dal 5 stelle (più alto) al 1 stella -->
+          <li v-for="star in [5, 4, 3, 2, 1]" :key="star" @click="setFilterRating(star)" class="clickable">
+            <!-- Per ogni livello di rating, crea le stelle dorate in base al numero di stelle -->
+            <span v-for="i in star" :key="i" class="fa fa-star gold-star"></span>:
+            <!-- Mostra il numero di recensioni per ciascun livello di rating (da 1 a 5 stelle) -->
+            {{ ratingCount[star] || 0 }} recensioni
+          </li>
+        </ul>
+        <!-- Mostra la media complessiva delle recensioni con una stella dorata accanto -->
+        <div>Media complessiva: {{ averageRating }} <span class="fa fa-star gold-star"></span></div>
+      </div>
+
+      <div class="filter-container">
+        <!-- filter rating -->
+        <h5>Filtra:</h5>
+        <div style="display: flex; margin-bottom: 25px; margin-top:20px; " >
+          <label for="filterRating">Filtra:</label>
+          <div class="star-rating">
         <span v-for="star in 5" :key="star" @click="setFilterRating(star)">
           <i :class="['fa', 'fa-star', {'checked': star <= filterRating}]"></i>
         </span>
-      </div>
-
-      <!-- filtro per data desc o asc -->
-      <label for="dateOrder">Ordina per data:</label>
-        <div class="select-data">
-          <select class="selezione" id="dateOrder" v-model="dateOrder" @change="fetchReviews">
-            <option value="desc">Dal più recente</option>
-            <option value="asc">Dal più vecchio</option>
-          </select>
+          </div>
+        </div>
+        <div style="display: flex; margin-bottom: 30px;" >
+          <!-- filtro per data desc o asc -->
+          <label for="dateOrder">Ordina per data: &nbsp;&nbsp; </label>
+          <div class="select-data">
+            <select class="selezione" id="dateOrder" v-model="dateOrder" @change="fetchReviews">
+              <option value="desc">Dal più recente</option>
+              <option value="asc">Dal più vecchio</option>
+            </select>
+          </div>
         </div>
 
-      <!-- resetta i filtri -->
-      <button @click="resetFilter" class="btn btn-secondary reset-filtro">Resetta filtro</button>
-    </div>
+        <!-- resetta i filtri -->
+        <button @click="resetFilter" class="filterreset-button">Resetta filtro</button>
 
-    <!-- sezione per vedere la media delle recensioni -->
-    <div class="review-stats">
-      <h3>Statistiche Recensioni</h3>
-      <ul>
-        <!-- Itera attraverso ogni livello di rating, dal 5 stelle (più alto) al 1 stella -->
-        <li v-for="star in [5, 4, 3, 2, 1]" :key="star" @click="setFilterRating(star)" class="clickable">
-          <!-- Per ogni livello di rating, crea le stelle dorate in base al numero di stelle -->
-          <span v-for="i in star" :key="i" class="fa fa-star gold-star"></span>:
-          <!-- Mostra il numero di recensioni per ciascun livello di rating (da 1 a 5 stelle) -->
-          {{ ratingCount[star] || 0 }} recensioni
-        </li>
-      </ul>
-      <!-- Mostra la media complessiva delle recensioni con una stella dorata accanto -->
-      <div>Media complessiva: {{ averageRating }} <span class="fa fa-star gold-star"></span></div>
-    </div>
+      </div>
+</div>
 
 
-
-    <div class="reviews-list row" ref="reviewsSection">
-      <h3 class="col-12 text-center">Recensioni</h3>
-      <div v-for="review in reviews" :key="review.reviewId" class="review-item">
-        <h4>{{ review.title }}
-          <!-- Pulsante "Cancella" visibile solo se l'utente corrente ha scritto la recensione -->
-          <button
-              v-if="review.userId === this.userId"
-              class="trash-button"
-              @click="deleteReview(review.reviewId)"
-          > <img src="@/assets/img/trash.png" alt="f" class="trash-icon" />
-          </button>
-        </h4>
-        <p>{{ review.userId }}</p>
-        <p>{{formatDate(review.date)}}</p>
-        <p>{{ review.text }}</p>
-        <div>Voto generale: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.generalRating}"></span></div>
-        <div>Voto Location: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.locationRating}"></span></div>
-        <div>Voto Staff: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.staffRating}"></span></div>
-        <div>Voto Prezzo: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.priceRating}"></span></div>
+      <div class="reviews-list row" ref="reviewsSection">
+        <h3 class="col-12 text-center"></h3>
+        <div v-for="review in reviews" :key="review.reviewId" class="review-item">
+          <h4>{{ review.title }}
+            <!-- Pulsante "Cancella" visibile solo se l'utente corrente ha scritto la recensione -->
+            <button
+                v-if="review.userId === this.userId"
+                class="trash-button"
+                @click="deleteReview(review.reviewId)"
+            > <img src="@/assets/img/trash.png" alt="f" class="trash-icon" />
+            </button>
+          </h4>
+          <p>{{ review.userId }}</p>
+          <p>{{formatDate(review.date)}}</p>
+          <p>{{ review.text }}</p>
+          <div>Voto generale: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.generalRating}"></span></div>
+          <div>Voto Location: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.locationRating}"></span></div>
+          <div>Voto Staff: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.staffRating}"></span></div>
+          <div>Voto Prezzo: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.priceRating}"></span></div>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </template>
 
@@ -177,10 +182,17 @@ export default {
       messageType: '',
       averageRating: null,
       ratingCount: {},
+      event: {
+        name: '',
+        date: '',
+        location: '',
+        description: '',
+        organizer: '',
+      },
     };
   },
   methods: {
-    // Funzione per inviare la recensione al backend
+// Funzione per inviare la recensione al backend
     async submitReview() {
       // Messaggi di errore specifici per i campi mancanti
       if (!this.title && !this.reviewText) {
@@ -191,16 +203,16 @@ export default {
         this.displayMessage("Testo della recensione mancante.", "error");
       } else {
 
-          const reviewData = {
-            title: this.title,
-            text: this.reviewText,
-            generalRating: this.generalRating,
-            locationRating: this.category1Rating,
-            staffRating: this.category2Rating,
-            priceRating: this.category3Rating,
-            eventId: this.eventId,  // Include eventId
-            userId: this.userId,    // Include userId
-          };
+        const reviewData = {
+          title: this.title,
+          text: this.reviewText,
+          generalRating: this.generalRating,
+          locationRating: this.category1Rating,
+          staffRating: this.category2Rating,
+          priceRating: this.category3Rating,
+          eventId: this.eventId,  // Include eventId
+          userId: this.userId,    // Include userId
+        };
 
         try {
           const response = await axios.post('/api/recensioni', reviewData);  // POST al backend per salvare la recensione
@@ -211,12 +223,12 @@ export default {
           this.fetchReviews(); // Aggiorna le recensioni visualizzate
           this.fetchStatistics(); // Aggiorna le statistiche visualizzate
         } catch (error) {
-          console.error("Errore nel pubblicare la recensione", error);  //messaggio di errore in caso di mancato inserimento
+          console.error("Errore  nel pubblicare la recensione", error.response);  //messaggio di errore in caso di mancato inserimento
           this.displayMessage("Errore nel pubblicare la recensione", "error");
         }
       }
     }
-,
+    ,
     // Metodo per eliminare una recensione
     async deleteReview(reviewId) {
       try {
@@ -228,6 +240,25 @@ export default {
         this.displayMessage('Errore durante la cancellazione della recensione.', 'error');
       }
     },
+
+    // metodo che recupera i dati dell'evento
+    async fetchEventDetail() {
+      try {
+        // Filtro gli eventi per trovare quello che corrisponde a eventId
+        const response = await axios.get('http://localhost:3000/api/events');
+        const eventData = response.data.find((event) => event.id === String(this.eventId));  // Assicurati che l'id sia confrontato come stringa
+
+        if (eventData) {
+          this.event = eventData; // Salva i dati dell'evento
+        } else {
+          console.error('Event not found');
+        }
+      } catch (error) {
+        console.error('Error fetching event details:', error);
+      }
+    }
+    ,
+
 
     displayMessage(msg, type){
       this.message = msg;
@@ -296,20 +327,42 @@ export default {
       }
     },
 
-    // Recupera gli ID da Mockoon tramite il backend
+// Recupera l'ID utente da Mockoon e l'ID evento dalla query string
     async fetchIds() {
+      // Recupera l'eventId dalla query string
+      const eventIdFromQuery = this.$route.query.eventId;
+
+      if (eventIdFromQuery) {
+        // Converte l'eventId in un numero intero
+        this.eventId = parseInt(eventIdFromQuery, 10); // Assicurati che sia un numero intero
+        if (isNaN(this.eventId)) {
+          console.error("eventId non è un numero valido.");
+          return; // Termina se l'eventId non è un numero valido
+        }
+      } else {
+        console.error("Nessun eventId trovato nella query string.");
+        return; // Termina se l'eventId non è disponibile
+      }
+
       try {
-        const urlParams = new URLSearchParams(window.location.search);
-        const eventId = urlParams.get('Id'); // Prendi l'ID dalla query
-        console.log("ID recuperato dall'URL:", eventId);
-        this.eventId=eventId;
-        const response = await axios.get('http://localhost:3000/api/ids');  // Endpoint BE per ottenere IDs
-        // Aggiungi un log per vedere la risposta
-        console.log("Risposta ricevuta:", response);
+        // Chiamata a Mockoon per ottenere l'userId
+        const response = await axios.get('http://localhost:3000/api/ids'); // Endpoint BE per ottenere IDs
         this.userId = response.data.userId;
-        await this.fetchReviews(); //una volta recuperato l'id devo recuperare anche tutte le recensioni
+
+        // Crea l'oggetto contenente i due ID
+        const ids = {
+          eventId: this.eventId,
+          userId: this.userId,
+        };
+
+        // Stampa l'oggetto nella console
+        console.log("Oggetto contenente gli ID:", ids);
+
+        // Dopo aver ottenuto gli ID, carica le recensioni e le statistiche
+        await this.fetchReviews();
+        await this.fetchStatistics();
       } catch (error) {
-        console.error("Errore nel recupero degli ID", error);
+        console.error("Errore nel recupero degli ID utente da Mockoon", error);
       }
     },
 
@@ -339,13 +392,14 @@ export default {
       this.dateOrder = 'desc';
       this.fetchReviews(); //recupero tutte le reviews
     }
-},
+  },
 
   //al caricamneto della pagina voglio che vengano mostrate le recensioni e le statistiche
   async mounted() {
     await this.fetchIds();
     if (this.eventId) {
       this.fetchStatistics();
+      this.fetchEventDetail(); // Recupera i dettagli dell'evento
     }
   },
 
@@ -353,5 +407,5 @@ export default {
 </script>
 
 <style scoped>
-  @import '../assets/styles/review.css';
+@import '../assets/styles/review.css';
 </style>

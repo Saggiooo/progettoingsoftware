@@ -38,6 +38,7 @@ a {
 
 .contenutopagina{
     margin-left: 320px;
+    background-color: var(--sfondo)!important;
 }
 
 

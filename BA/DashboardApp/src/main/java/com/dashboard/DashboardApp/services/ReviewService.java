@@ -20,39 +20,23 @@ import java.util.stream.Collectors;
 @Service
 public class ReviewService {
 
-    private final WebClient webClient;
     private final ReviewRepository reviewRepository;
 
     @Autowired
-    public ReviewService(WebClient.Builder webClientBuilder, ReviewRepository reviewRepository) {
+    public ReviewService(ReviewRepository reviewRepository) {
         this.reviewRepository = reviewRepository;
-        this.webClient = webClientBuilder.baseUrl("http://localhost:3000").build();
 
     }
 
-    //recupera id utente e id evento da mockoon e popola il model review per poi salvarlo nel db
-
+    // Metodo per salvare la recensione
     public Mono<Review> saveReview(Review review) {
-        return webClient.get()
-                .uri("/api/ids")
-                .retrieve()
-                .bodyToMono(IdsResponse.class)
-                .flatMap(idsResponse ->{
-                    review.setUserId(idsResponse.getUserId());
-                    review.setEventId(idsResponse.getEventId());
-                    review.setDate(LocalDateTime.now());
-                    return Mono.just(reviewRepository.save(review));
-                        });
+        // Imposta la data della recensione
+        review.setDate(LocalDateTime.now());
 
+        // Non fare richieste a Mockoon. Salva direttamente la recensione nel database.
+        return Mono.just(reviewRepository.save(review));
     }
 
-    // Metodo per ottenere gli ID evento e utente da Mockoon
-    public Mono<Map<String, Integer>> getReviewIds() {
-        return webClient.get()
-                .uri("/api/ids") // endpoint di Mockoon
-                .retrieve()
-                .bodyToMono(new ParameterizedTypeReference<Map<String, Integer>>() {}); // Specifica il tipo corretto
-    }
 
     // Metodo per recuperare tutte le recensioni filtrate per rating e data
     public List<Review> getReviewsByEventAndRating(Integer eventId, Integer generalRating, String dateOrder) {

@@ -2,69 +2,147 @@
 @import 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
 
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #212529;
-    font-family: 'Roboto', sans-serif;
-    height: 100%;
-}
 
-.page-container {
-    background-color: #ffffff; /* Sfondo chiaro */
-    color: #212529; /* Testo scuro */
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
+.event-detail{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    background: var(--sfondo);
+    box-shadow: 2px 2px 40px #d8d8d8;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top:20px;
+
 }
 
-.top-bar {
-    background-color: #ffffff; /* Sfondo chiaro */
-    color: #212529; /* Testo scuro */
-    padding: 15px 0;
-    border-radius: 10px;
-    margin-bottom: 20px; /* Aggiungiamo uno spazio sotto la barra superiore */
-    box-shadow: 2px 5px rgba(0, 0, 0, 0.1); /* Aggiungiamo una leggera ombra */
+.contenutopagina{
+    margin-left: 300px!important;
+}
+
+.namedesctiprion{
+    padding-left: 40px;
+    padding-top: 35px;
+}
+
+.otherinfoevent{
+    padding-right: 115px;
+    margin-left: -50px;
+    padding-top: 12px;
+}
+
+.vertical-line{
+    width: 2px;
+    height: 120px;
+    background-color: #8c8c8c;
+    margin: 5px;
 }
 
 .back-button {
-    padding: 5px 10px;
-    font-size: 20px;
-    color: #006fff;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    transition: color 0.3s;
+    position: fixed; /* Fisso nella posizione */
+    bottom: 20px; /* Distanza dal basso */
+    right: 20px; /* Distanza da destra */
+    background-color: white; /* Sfondo bianco */
+    color: black; /* Testo nero */
+    padding: 10px 20px; /* Spazi interni */
+    font-size: 16px; /* Dimensione del testo */
+    border: none; /* Nessun bordo */
+    border-radius: 8px; /* Angoli arrotondati */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Leggerissima ombra */
+    cursor: pointer; /* Indica che è cliccabile */
+    transition: 0.2s ease;
 }
 
-.back-button:hover {
-    color: #cccccc;
+.back-button:hover{
+    background-color: #0270ff;
+    color: white;
 }
 
-.back-button i {
-    margin-right: 5px;
+.page-container {
+    display: block;
+    padding: 30px;
 }
 
-.title-text {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
+.header-review{
+    display: flex;
+    justify-content: space-between;
+    padding: 42px;
 }
 
-.recensioni {
-    max-width: 600px;
-    padding: 20px;
+.header-review h2{
+    font-weight: 600;
+}
+
+.toggle-review-form{
+    padding: 10px;
+    padding-top: 12px;
+    padding-right: 19px;
+    padding-left: 19px;
+    background: #ef9f0a !important;
+    color: white!important;
+    text-decoration: none!important;
+    border-radius: 8px;
+}
+.recensioni-form{
+    display: block;
+    align-items: end;
+    align-content: end;
+    width: 100%px;
+    margin: 40px;
+    background: #e6e6e6;
+    padding: 40px;
+    border: 1px solid #dadada;
+    border-radius: 20px;
+    margin-top: -2np0px;
+
+}
+
+.statisticheandfilter{
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 80px 100px 80px 100px;
+    border-radius: 20px;
+    margin: 0px;
+}
+
+.filterreset-button{
     border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    background: #ffc400;
+    padding-left: 20px;
+    padding-right: 20px;
+
 }
-.recensioni-form {
-    margin-top: 10px;
+
+.trash-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    display: block;
 }
+.review-stats h3{
+    font-weight: normal;
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.review-stats{
+    border-radius: 20px!important;
+    background: white;
+    padding: 70px 150px 40px 150px; /* sopra destra sotto sinistra (orario) */
+    margin-bottom: 25px;
+    margin-top: 22px;
+}
+/*FINE MIO*/
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -78,7 +156,7 @@ html, body {
     font-size: 24px;
     margin-right: 5px;
     cursor: pointer;
-    color: #ccc; /* Colore grigio per le stelle non selezionate */
+    color: #ccc;
 }
 
 .star-rating .fa-star.checked {
@@ -128,7 +206,222 @@ html, body {
 
 }
 
-/* Stili per l'elemento delle recensioni */
+
+.reviews-list {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.review-item {
+    padding: 20px;
+    margin: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #e4e4e8;
+    border-radius: 20px;
+}
+
+.review-item h4 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-item .fa-star {
+    color: rgba(205, 188, 188, 0.5);
+    margin-right: 2px;
+}
+
+.review-item .fa-star.checked {
+    color: gold;
+}
+
+.reset-filtro {
+    margin-top: 10px;
+    border: none;
+    background-color: orange;
+}
+
+
+.message-box {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-weight: bold;
+    text-align: center;
+    max-width: 90%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.review-stats h3 {
+
+}
+
+.review-stats ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.review-stats li {
+    margin-bottom: 5px;
+}
+.clickable {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.clickable:hover {
+    color: #007bff;
+}
+
+.trash-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.trash-button:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.trash-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    display: block;
+}
+
+
+
+
+
+
+
+/*
+.top-bar {
+    background-color: #ffffff;
+    color: #212529;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+    padding: 5px 10px;
+    font-size: 20px;
+    color: #006fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.back-button:hover {
+    color: #cccccc;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.title-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.recensioni {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+.recensioni-form {
+    margin-top: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.star-rating {
+    display: flex;
+    margin-left: 7px;
+}
+
+.star-rating .fa-star {
+    font-size: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.star-rating .fa-star.checked {
+    color: gold;
+}
+
+.gold-star{
+    color: gold;
+}
+
+.submit-button {
+    margin-top: 10px;
+}
+
+.reset-button {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.toggle-review-form {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+    background-color: white;
+    border: none;
+    margin-bottom: 10px;
+}
+.toggle-review-form:hover {
+    color: #0056b3;
+}
+
+.toggle-subcategories {
+    cursor: pointer;
+    color: #007bff;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.filter-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.selezione{
+    border-radius: 5px;
+
+}
+
+
 .reviews-list {
     width: 100%;
     max-width: 600px;
@@ -146,7 +439,7 @@ html, body {
 }
 
 .review-item .fa-star {
-    color: rgba(205, 188, 188, 0.5); /* Colore dorato per le stelle */
+    color: rgba(205, 188, 188, 0.5);
     margin-right: 2px;
 }
 
@@ -236,70 +529,69 @@ html, body {
 }
 
 
-     /* Stile per il contenitore principale del dettaglio evento */
  .event-detail {
-     max-width: 900px; /* Limita la larghezza del contenitore */
-     margin: 40px auto; /* Centra il contenitore */
+     max-width: 900px;
+     margin: 40px auto;
      padding: 30px;
-     background-color: #ffffff; /* Sfondo bianco */
-     border-radius: 12px; /* Bordo arrotondato */
-     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Ombra */
-     font-family: 'Arial', sans-serif; /* Font moderno */
+     background-color: #ffffff;
+     border-radius: 12px;
+     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+     font-family: 'Arial', sans-serif;
      display: flex;
      flex-direction: column;
-     justify-content: space-between; /* Spaziatura tra gli elementi */
-     height: 400px; /* Imposta un'altezza fissa */
+     justify-content: space-between;
+     height: 400px;
  }
 
-/* Stile per il bottone indietro */
+
 .back-button {
-    background-color: #007bff; /* Colore blu */
-    color: white; /* Colore del testo */
+    background-color: #007bff;
+    color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 55px; /* Spinge il bottone verso il basso */
-    align-self: flex-end; /* Allinea il bottone a destra */
+    margin-top: 55px;
+    align-self: flex-end;
 }
 
 .back-button i {
-    margin-right: 5px; /* Spazio tra l'icona e il testo */
+    margin-right: 5px;
 }
 
-/* Stile per il titolo dell'evento */
+
 h2 {
     font-size: 40px;
-    color: #333; /* Colore scuro per il titolo */
+    color: #333;
     font-weight: 700;
     margin-bottom: 20px;
-    text-align: center; /* Centra il titolo */
-    border-bottom: 2px solid #f0f0f0; /* Linea decorativa sotto il titolo */
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
     padding-bottom: 10px;
 }
 
-/* Stile per i paragrafi che mostrano le informazioni */
+
 p {
     font-size: 21px;
-    color: #555; /* Colore grigio per il testo */
+    color: #555;
     margin: 10px 0;
-    line-height: 1.6; /* Spaziatura tra le righe */
+    line-height: 1.6;
 }
 
-/* Stile per le etichette (Date, Location, ecc.) */
+
 p strong {
-    color: #007bff; /* Colore blu per evidenziare le etichette */
+    color: #007bff;
     font-weight: 600;
 }
 
-/* Aggiunta di una linea separatrice tra le sezioni */
+
 p + p {
-    border-top: 1px solid #f0f0f0; /* Linea separatrice sottile */
+    border-top: 1px solid #f0f0f0;
     padding-top: 10px;
 }
 
-/* Aggiunta di un'animazione al caricamento */
+
 .event-detail {
     opacity: 0;
     transform: translateY(200px);
@@ -312,3 +604,7 @@ p + p {
         transform: translateY(0);
     }
 }
+*/
+
+
+

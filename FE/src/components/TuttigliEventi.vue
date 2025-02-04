@@ -8,12 +8,6 @@
     <div class="contenutopagina">
       <!-- Inizio del contenuto della pagina-->
 
-      <div>
-        <router-link to="/Recensioni">
-          <button> Recensioni</button>
-        </router-link>
-      </div>
-
       <!-- Inserisci l'intestazione "Nav.vue"-->
       <div>
         <Nav />
@@ -34,11 +28,8 @@
 
         </ul>
       </div>
-      <div>
-        <router-link to="/Recensioni">
-          <button> Recensioni</button>
-        </router-link>
-      </div>
+      <button class="buttonend"></button>
+
 
       <!-- Bottoni per la paginazione -->
       <div class="pagination">
@@ -118,6 +109,12 @@ const nextPage = () => {
 </script>
 
 <style>
+.buttonend{
+ color: white;
+  background: white;
+  cursor: default!important;
+  border: 1px solid var(--sfondo);
+}
 /* Stile per il contenitore principale della pagina */
 .fullpage {
   display: flex;
@@ -130,7 +127,6 @@ const nextPage = () => {
 .contenutopagina {
   flex: 1;
   padding: 20px;
-  max-width: 2000px;
   background-color: #ffffff; /* Sfondo bianco per il contenuto */
 }
 

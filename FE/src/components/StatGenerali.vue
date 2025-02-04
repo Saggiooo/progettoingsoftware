@@ -186,14 +186,9 @@ onMounted(() => {
                 <canvas class="graficoUno" id="myChart2"></canvas>
 
             </div>
-
-
-    <!-- Template for event item -->
-    <template id="eventTemplate">
-        <li class="listadeglieventi"></li>
-    </template>
+          <br>
         </div>
-    <!-- fine del contenuto della pagina-->
+
     </div>
 
 </div>

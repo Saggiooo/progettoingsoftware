@@ -33,7 +33,6 @@ a {
     position: relative;
     width: 100%;
     overflow-x: hidden; /* Nasconde l'overflow orizzontale */
-    overflow-y: hidden; /* Nasconde l'overflow verticale */
 }
 
 .contenutopagina{

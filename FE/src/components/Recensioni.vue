@@ -143,7 +143,6 @@
             > <img src="@/assets/img/trash.png" alt="f" class="trash-icon" />
             </button>
           </h4>
-          <p>{{ review.userId }}</p>
           <p>{{formatDate(review.date)}}</p>
           <p>{{ review.text }}</p>
           <div>Voto generale: <span v-for="star in 5" :key="star" class="fa fa-star" :class="{'checked': star <= review.generalRating}"></span></div>

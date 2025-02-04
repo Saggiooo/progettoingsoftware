@@ -19,14 +19,20 @@ onMounted(() => {
   axios.get('/api/clientinfo')
       .then(response => {
         const data = response.data;
-        partecipanti.value = data.partecipantitotali;
 
-        // Aggiorna il placeholder
-        document.getElementById('partecipanti-placeholder')!.innerText = `${partecipanti.value}`;
+        // Conta gli oggetti nell'array (se è un array)
+        const totalPartecipanti = Array.isArray(data) ? data.length : 0;
+
+        // Aggiorna la variabile Vue (se usi Vue.js)
+        partecipanti.value = totalPartecipanti;
+
+        // Aggiorna il placeholder nell'HTML
+        document.getElementById('partecipanti-placeholder')!.innerText = `${totalPartecipanti}`;
       })
       .catch(error => {
-        console.error('Errore nel recupero dei dati:', error);
+        console.error("Errore nel recupero dei dati:", error);
       });
+
 
   // Recupero informazioni per i grafici
   axios.get('/api/nationinfo')
@@ -66,8 +72,13 @@ onMounted(() => {
       .then(response => {
         const sexes = response.data;
         // Popolo labels e data per il grafico a torta
+        const translations = {
+          'male': 'Maschio',
+          'female': 'Femmina'
+        };
         Object.entries(sexes).forEach(([sex, value]) => {
-          labelsPieSex.value.push(sex.charAt(0).toUpperCase() + sex.slice(1)); // Capitalizzo la prima lettera
+          const translatedSex = translations[sex.toLowerCase()] || (sex.charAt(0).toUpperCase() + sex.slice(1));
+          labelsPieSex.value.push(translatedSex);
           dataPieSex.value.push(value);
         });
 
@@ -113,7 +124,7 @@ onMounted(() => {
       </div>
       <!-- Implemento i Box con i numeri -->
       <div class="cardbox">
-        <a href="/dashboard-clienti">
+
           <div class="card">
             <div>
               <div class="numbers"><div id="partecipanti-placeholder">{{ partecipanti }}</div></div>
@@ -122,7 +133,7 @@ onMounted(() => {
             <div class="iconBx">
               <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
             </div>
-          </div></a>
+          </div>
       </div>
 
       <!-- Implemento un grafico -->

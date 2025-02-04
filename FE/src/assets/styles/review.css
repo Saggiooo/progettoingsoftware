@@ -110,7 +110,7 @@
     background: #ffffff;
     padding: 80px 100px 80px 100px;
     border-radius: 20px;
-    margin: 0px;
+    width: 48%;
 }
 
 .filterreset-button{
@@ -140,6 +140,7 @@
     padding: 70px 150px 40px 150px; /* sopra destra sotto sinistra (orario) */
     margin-bottom: 25px;
     margin-top: 22px;
+    width: 48%;
 }
 /*FINE MIO*/
 

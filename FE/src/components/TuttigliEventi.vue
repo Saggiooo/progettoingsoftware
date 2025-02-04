@@ -75,7 +75,7 @@ const fetchEvents = async () => {
 fetchEvents();
 
 // Variabile per il numero di eventi per pagina
-const itemsPerPage = 22; // Numero di eventi per pagina
+const itemsPerPage = 10; // Numero di eventi per pagina
 // Variabile reattiva per la pagina corrente
 const currentPage = ref(1);
 

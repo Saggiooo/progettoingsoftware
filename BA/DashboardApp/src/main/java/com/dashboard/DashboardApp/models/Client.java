@@ -9,10 +9,7 @@ public class Client {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-    @Column(nullable = false)
-    private String name;
 
     @Column(nullable = false)
     private String nation;
@@ -20,23 +17,7 @@ public class Client {
     @Column(nullable = false)
     private boolean sex;
 
-    private Integer age;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getNation() {
         return nation;
@@ -54,22 +35,12 @@ public class Client {
         this.sex = sex;
     }
 
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 
     @Override
     public String toString() {
         return "Client{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
                 ", nation='" + nation + '\'' +
                 ", sex=" + sex +
-                ", age=" + age +
                 '}';
     }
 
@@ -78,11 +49,11 @@ public class Client {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Client client = (Client) o;
-        return sex == client.sex && id.equals(client.id) && name.equals(client.name) && nation.equals(client.nation) && age.equals(client.age);
+        return sex == client.sex && nation.equals(client.nation);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, nation, sex, age);
+        return Objects.hash( nation, sex);
     }
 }

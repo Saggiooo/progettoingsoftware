@@ -10,6 +10,9 @@ const partecipanti = ref(0);
 const utenti = ref(0);
 const valutazioni = ref(0);
 const coso = ref(0);
+const eventoConMassimiPartecipantiId = ref<number | null>(null);
+const eventoConMinimiPartecipantiId = ref<number | null>(null);
+const reloadKey = ref(0); // imposto la variabile per ricaricare il grafico tutte le volte che apro la pagina altrimenti viene sfasato
 
 const labels1 = ref<string[]>([]); // Per i nomi degli eventi (grafico a linee)
 const dataPartecipanti1 = ref<number[]>([]); // Per i partecipanti (grafico a linee)
@@ -21,13 +24,17 @@ const eventList = ref<any[]>([]);
 
 // Recupero dati per i placeholder e grafici
 onMounted(() => {
+  // Incrementa la chiave quando torni alla pagina
+  reloadKey.value++; // metto questa variabile per forzare il reload del componente
   axios.get('/api/statsinfo')
       .then(response => {
         const data = response.data;
         partecipanti.value = data.partecipantitotali;
         utenti.value = data.mediaPartecipanti;
         valutazioni.value = data.eventoConMassimiPartecipanti;
+        eventoConMassimiPartecipantiId.value = data.eventoConMassimiPartecipantiId;
         coso.value = data.eventoConMinimiPartecipanti;
+        eventoConMinimiPartecipantiId.value = data.eventoConMinimiPartecipantiId;
 
         // Aggiorna i placeholder con i dati
         document.getElementById('partecipanti-placeholder')!.innerText = `${partecipanti.value}`;
@@ -39,6 +46,8 @@ onMounted(() => {
         console.log("Utenti:", utenti.value);
         console.log("Valutazioni:", valutazioni.value);
         console.log("Coso:", coso.value);
+        console.log("Evento con massimo partecipanti ID:", eventoConMassimiPartecipantiId.value);
+        console.log("Evento con minimo partecipanti ID:", eventoConMinimiPartecipantiId.value);
       })
       .catch(error => {
         console.error('Si è verificato un errore durante il recupero dei dati:', error);
@@ -121,80 +130,94 @@ onMounted(() => {
 
 
 <template>
-<div class="fullpage">
+  <div class="fullpage">
     <!-- Inserisco la Sidebar "Sidebar.vue" -->
     <div>
-            <Sidebar/>
+      <Sidebar/>
     </div>
 
     <div class="contenutopagina">
-    <!-- Inizio del contenuto della pagina-->
-        <!-- Inserisco l'intestazione "Nav.vue"-->
-        <div>
-            <Nav/>
-        </div>
-        <!-- Implemento i Box con i numeri -->
-        <div class="cardbox">
-            <a href="/dashboard-clienti">
-             <div class="card">
-                <div>
-                    <div class="numbers"><div id="partecipanti-placeholder">{{ partecipanti }}</div></div>
-                    <div class="cardName">Partecipanti Totali</div>
-                </div>
-                <div class="iconBx">
-                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
-                </div>
-            </div></a>
-    
-             <div class="card">
-                <div>
-                    <div class="numbers"><div id="utenti-placeholder">{{ utenti }}</div></div>    
-                    <div class="cardName">Media Partecipanti</div>
-                </div>
-                 <div class="iconBx">
-                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
-                </div>
+      <!-- Inizio del contenuto della pagina-->
+      <!-- Inserisco l'intestazione "Nav.vue"-->
+      <div>
+        <Nav/>
+      </div>
+      <!-- Implemento i Box con i numeri -->
+      <div class="cardbox">
+        <a href="/dashboard-clienti">
+          <div class="card">
+            <div>
+              <div class="numbers"><div id="partecipanti-placeholder">{{ partecipanti }}</div></div>
+              <div class="cardName">Partecipanti Totali</div>
             </div>
+            <div class="iconBx">
+              <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+            </div>
+          </div></a>
 
-            <div class="card">
-                <div>
-                    <div class="textstatsdashboard"><div id="valutazioni-placeholder">{{ valutazioni }}</div></div>
-                    <div class="cardName">Il più prenotato</div>
-                </div>
-                 <div class="iconBx">
-                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
-                </div>
-            </div>
-
-            <div class="card">
-                <div>
-                    <div class="textstatsdashboard"><div id="coso-placeholder">{{ coso }}</div></div>
-                    <div class="cardName">Il meno prenotato</div>
-                </div>
-                 <div class="iconBx">
-                    <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
-                </div>
-            </div>
+        <div class="card">
+          <div>
+            <div class="numbers"><div id="utenti-placeholder">{{ utenti }}</div></div>
+            <div class="cardName">Media Partecipanti</div>
+          </div>
+          <div class="iconBx">
+            <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+          </div>
         </div>
 
-        <!-- Implemento un grafico -->
+        <!-- Card per il più prenotato -->
+        <!-- Card per il più prenotato -->
+        <div class="card">
+          <div>
+            <router-link v-if="eventoConMassimiPartecipantiId"
+                         :to="`/Recensioni?eventId=${eventoConMassimiPartecipantiId}`">
+              <div class="textstatsdashboard">
+                <div id="valutazioni-placeholder">{{ valutazioni }}</div>
+              </div>
+              <div class="cardName">Il più prenotato</div>
+            </router-link>
+          </div>
+          <div class="iconBx">
+            <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+          </div>
+        </div>
+
+        <!-- Card per il meno prenotato -->
+        <div class="card">
+          <div>
+            <router-link v-if="eventoConMinimiPartecipantiId"
+                         :to="`/Recensioni?eventId=${eventoConMinimiPartecipantiId}`">
+              <div class="textstatsdashboard">
+                <div id="coso-placeholder">{{ coso }}</div>
+              </div>
+              <div class="cardName">Il meno prenotato</div>
+            </router-link>
+          </div>
+          <div class="iconBx">
+            <img src="@/assets/img/icon-statistiche.png" alt="Icona Statistiche" class="iconCard">
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Implemento un grafico -->
+      <div :key="reloadKey">
         <div class="graphBox">
-            <div class="box1">
-                <canvas class="graficoUno" id="myChart"></canvas>
-            </div>
-            <div class="box">
-                <canvas class="graficoUno" id="myChart2"></canvas>
-
-            </div>
-          <br>
+          <div class="box1">
+            <canvas class="graficoUno" id="myChart"></canvas>
+          </div>
+          <div class="box">
+            <canvas class="graficoUno" id="myChart2"></canvas>
+          </div>
         </div>
+      </div>
+
 
     </div>
 
-</div>
+  </div>
 </template>
 
 <style>
 </style>
-
-

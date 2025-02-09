@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6756e8e-13a5-441f-a87f-ebbe6093f2b1" name="Changes" comment="Modifiche alla pagina che mostra l'elenco degli eventi e aggiunta pagina sui dettagli dell'evento">
-      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/models/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/review.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/review.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InformazioniClienti.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/InformazioniClienti.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Recensioni.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Recensioni.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TuttigliEventi.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TuttigliEventi.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StatGenerali.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StatGenerali.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +117,7 @@
       <workItem from="1738154192198" duration="1733000" />
       <workItem from="1738585280988" duration="161000" />
       <workItem from="1738678972013" duration="5998000" />
+      <workItem from="1739107531347" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="prova">
       <option name="closed" value="true" />

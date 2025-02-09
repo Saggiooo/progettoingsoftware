@@ -27,45 +27,46 @@ public class DashboardController {
     }
 
     // Nuovo endpoint /api/statsinfo per ottenere le statistiche
-    // Nuovo endpoint /api/statsinfo per ottenere le statistiche
     @GetMapping("/statsinfo")
     public Mono<ResponseEntity<Map<String, Object>>> getStatsInfo() {
         return Mono.just(dashboardService.getEventinfo())
                 .map(events -> {
                     int partecipantiTotali = events.stream()
-                            .mapToInt(Eventinfo::getPartecipanti)  // Supponiamo che `Eventinfo` abbia un metodo `getPartecipanti()`
+                            .mapToInt(Eventinfo::getPartecipanti)
                             .sum();
 
-                    // Calcolare la media dei partecipanti
                     double mediaPartecipanti = events.stream()
                             .mapToInt(Eventinfo::getPartecipanti)
                             .average()
-                            .orElse(0);  // Restituisce 0 se la lista è vuota
+                            .orElse(0);
 
-
-                    // Trovare l'evento con il massimo numero di partecipanti
-                    String eventoConMassimiPartecipanti = events.stream()
+                    // Trova l'evento con il massimo numero di partecipanti
+                    Eventinfo eventoMassimo = events.stream()
                             .max((e1, e2) -> Integer.compare(e1.getPartecipanti(), e2.getPartecipanti()))
-                            .map(Eventinfo::getEventName)  // Supponiamo che `Eventinfo` abbia il metodo `getNomeEvento()`
-                            .orElse("N/A");  // Restituisce "N/A" se la lista è vuota
+                            .orElse(null);
 
-                    // Trovare l'evento con il minimo numero di partecipanti
-                    String eventoConMinimiPartecipanti = events.stream()
+                    String eventoConMassimiPartecipanti = eventoMassimo != null ? eventoMassimo.getEventName() : "N/A";
+                    Integer eventoConMassimiPartecipantiId = eventoMassimo != null ? eventoMassimo.getEventId() : null;
+
+                    // Trova l'evento con il minimo numero di partecipanti
+                    Eventinfo eventoMinimo = events.stream()
                             .min((e1, e2) -> Integer.compare(e1.getPartecipanti(), e2.getPartecipanti()))
-                            .map(Eventinfo::getEventName)  // Supponiamo che `Eventinfo` abbia il metodo `getNomeEvento()`
-                            .orElse("N/A");  // Restituisce "N/A" se la lista è vuota
+                            .orElse(null);
 
+                    String eventoConMinimiPartecipanti = eventoMinimo != null ? eventoMinimo.getEventName() : "N/A";
+                    Integer eventoConMinimiPartecipantiId = eventoMinimo != null ? eventoMinimo.getEventId() : null;
 
-
-                    // Aggiungi altre statistiche che desideri qui
+                    // Creazione della mappa di statistiche
                     Map<String, Object> stats = Map.of(
                             "partecipantitotali", partecipantiTotali,
                             "mediaPartecipanti", mediaPartecipanti,
                             "eventoConMassimiPartecipanti", eventoConMassimiPartecipanti,
-                            "eventoConMinimiPartecipanti", eventoConMinimiPartecipanti
+                            "eventoConMassimiPartecipantiId", eventoConMassimiPartecipantiId,
+                            "eventoConMinimiPartecipanti", eventoConMinimiPartecipanti,
+                            "eventoConMinimiPartecipantiId", eventoConMinimiPartecipantiId
                     );
 
                     return ResponseEntity.ok(stats);
                 });
     }
-}
+} 

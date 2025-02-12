@@ -51,25 +51,7 @@
     color: var(--nero);
   }
   
-  .user-info {
-    display: flex;
-    align-items: center;
-    text-align: right;
-    color: var(--nero);
-  }
-  
-  .user-info img {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    margin-left: 10px;
-  }
-  
-  .user-info p {
-    font-size: 21px;
-    margin: 0;
-  }
-  
+
   .company-name {
     font-size: 14px !important;
     color: #BC6F35;

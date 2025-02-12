@@ -7,8 +7,8 @@
 }
 
 a {
-    text-decoration: none; /* Rimuove l'effetto di sottolineatura */
-    color: #000; /* Specifica il colore del testo dei link (nero) */
+    text-decoration: none;
+    color: #000;
 }
 
 :root
@@ -23,16 +23,40 @@ a {
     --invert: invert(100%);
     --coloretestibox: #1a1a1a;
     --ombra-esterna: 0 7px 25px rgb(192, 192, 192);
+    --pcolor: #888;
 
+}
+
+.company-name{
+    color: #e68404 !important;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: var(--nero);
+}
+
+.user-info img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.user-info p {
+    font-size: 21px;
+    margin: 0;
+    color: var(--pcolor);
 }
 
 
 .fullpage{
     z-index: 0;
-    background: var(--sfondo);
+    background: var(--sfondo)!important;
     position: relative;
     width: 100%;
-    overflow-x: hidden; /* Nasconde l'overflow orizzontale */
+    overflow-x: hidden;
 }
 
 .contenutopagina{
@@ -78,7 +102,11 @@ a {
     display: flex;
     text-decoration: none;
     color: white;
-    
+
+}
+
+.header-review h2{
+    color: var(--nero);
 }
 
 .sidebar ul li:hover a{
@@ -130,56 +158,56 @@ a {
 .sidebar ul li:hover a::before {
     content: '';
     position: absolute;
-    right: 50%; /* Posizionamento rispetto al bordo destro dell'elemento padre */
-    bottom: -40%; /* Posizionamento rispetto al fondo dell'elemento padre */
+    right: 50%;
+    bottom: -40%;
     width: 50px;
     height: 50px;
     background: transparent;
     border-radius: 50%;
     box-shadow: 35px -35px 0 10px var(--sfondo);
     pointer-events: none;
-    transform: translateY(50%); /* Per centrare verticalmente il cerchio */
+    transform: translateY(50%);
 }
 .sidebar ul li:hover a::after {
     content: '';
     position: absolute;
-    right: 50%; /* Posizionamento rispetto al bordo destro dell'elemento padre */
-    bottom: 140%; /* Posizionamento rispetto al fondo dell'elemento padre */
+    right: 50%;
+    bottom: 140%;
     width: 50px;
     height: 50px;
     background: transparent;
     border-radius: 50%;
     box-shadow: 35px 35px 0 10px var(--sfondo);
     pointer-events: none;
-    transform: translateY(50%); /* Per centrare verticalmente il cerchio */
+    transform: translateY(50%);
 }
 
 
 .sidebar ul li.active a::before {
     content: '';
     position: absolute;
-    right: 50%; /* Posizionamento rispetto al bordo destro dell'elemento padre */
-    bottom: -40%; /* Posizionamento rispetto al fondo dell'elemento padre */
+    right: 50%;
+    bottom: -40%;
     width: 50px;
     height: 50px;
     background: transparent;
     border-radius: 50%;
     box-shadow: 35px -35px 0 10px var(--sfondo);
     pointer-events: none;
-    transform: translateY(50%); /* Per centrare verticalmente il cerchio */
+    transform: translateY(50%);
 }
 .sidebar ul li.active a::after {
     content: '';
     position: absolute;
-    right: 50%; /* Posizionamento rispetto al bordo destro dell'elemento padre */
-    bottom: 140%; /* Posizionamento rispetto al fondo dell'elemento padre */
+    right: 50%;
+    bottom: 140%;
     width: 50px;
     height: 50px;
     background: transparent;
     border-radius: 50%;
     box-shadow: 35px 35px 0 10px var(--sfondo);
     pointer-events: none;
-    transform: translateY(50%); /* Per centrare verticalmente il cerchio */
+    transform: translateY(50%);
 }
 
 

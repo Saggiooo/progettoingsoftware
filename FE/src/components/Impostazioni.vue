@@ -117,7 +117,7 @@ function updateBackground(newVal: any) {
     document.documentElement.style.setProperty('--bianco', newVal ? '#222' : '#fff');
     document.documentElement.style.setProperty('--nero', newVal ? '#FFF' : '#000');
     document.documentElement.style.setProperty('--invert', newVal ? 'invert(0%)' : 'invert(100%)');
-    document.documentElement.style.setProperty('--coloretestibox', newVal ? '#fff' : '#1a1a1a');
+    document.documentElement.style.setProperty('--coloretestibox', newVal ? '#b8b8b8' : '#1a1a1a');
     document.documentElement.style.setProperty('--ombra-esterna', newVal ? '0 6px 20px rgb(90, 90, 90)' : '0 7px 25px rgb(192, 192, 192)');
 }
 

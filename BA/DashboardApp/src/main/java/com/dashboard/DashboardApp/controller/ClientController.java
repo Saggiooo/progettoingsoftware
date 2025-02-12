@@ -20,11 +20,7 @@ public class ClientController {
     @Autowired
     private ClientService clientService;
 
-    /**
-     * Restituisce la lista di tutti i clienti.
-     *
-     * @return Lista di clienti
-     */
+
     @GetMapping("/clientinfo")
     public Mono<ResponseEntity<List<Client>>> getClientInfo() {
         return Mono.fromCallable(() -> clientService.getClients())
@@ -37,9 +33,7 @@ public class ClientController {
     }
 
     /**
-     * Restituisce le statistiche per nazione.
-     *
-     * @return Mappa delle nazioni con il conteggio dei clienti
+     * Restituisce le statistiche per nazione
      */
     @GetMapping("/nationinfo")
     public Mono<ResponseEntity<Map<String, Long>>> getNationInfo() {
@@ -52,9 +46,7 @@ public class ClientController {
     }
 
     /**
-     * Restituisce le statistiche per sesso.
-     *
-     * @return Mappa dei sessi con il conteggio dei clienti
+     * Restituisce le statistiche per sesso
      */
     @GetMapping("/sexinfo")
     public Mono<ResponseEntity<Map<String, Long>>> getSexInfo() {

@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6756e8e-13a5-441f-a87f-ebbe6093f2b1" name="Changes" comment="Modifiche alla pagina che mostra l'elenco degli eventi e aggiunta pagina sui dettagli dell'evento">
-      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BA/DashboardApp/src/main/java/com/dashboard/DashboardApp/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/review.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/review.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Impostazioni.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Impostazioni.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +120,8 @@
       <workItem from="1738678972013" duration="5998000" />
       <workItem from="1739107531347" duration="279000" />
       <workItem from="1739285031402" duration="2721000" />
-      <workItem from="1739360112894" duration="2094000" />
+      <workItem from="1739360112894" duration="2236000" />
+      <workItem from="1739369348181" duration="2700000" />
     </task>
     <task id="LOCAL-00001" summary="prova">
       <option name="closed" value="true" />

@@ -1,0 +1,2170 @@
+localhost:3000/
+
+/api/events :
+
+[
+  {
+    "id": "1",
+    "name": "Aurora Music Festival",
+    "date": "2024-06-01",
+    "location": "New York",
+    "description": "A vibrant music festival featuring international artists.",
+    "organizer": "Aurora Events"
+  },
+  {
+    "id": "2",
+    "name": "Galactic Science Exhibition",
+    "date": "2024-06-15",
+    "location": "Los Angeles",
+    "description": "An exhibition showcasing the latest space technologies.",
+    "organizer": "Galactic Innovations"
+  },
+  {
+    "id": "3",
+    "name": "Vintage Car Show",
+    "date": "2024-07-01",
+    "location": "Chicago",
+    "description": "An exhibition of classic and vintage cars.",
+    "organizer": "Classic Wheels"
+  },
+  {
+    "id": "4",
+    "name": "Tropical Food Fair",
+    "date": "2024-07-15",
+    "location": "Houston",
+    "description": "A fair celebrating tropical cuisine and culinary arts.",
+    "organizer": "Taste of Tropics"
+  },
+  {
+    "id": "5",
+    "name": "Ocean Conservation Conference",
+    "date": "2024-08-01",
+    "location": "Miami",
+    "description": "A conference dedicated to ocean conservation efforts.",
+    "organizer": "Blue Planet Initiative"
+  },
+  {
+    "id": "6",
+    "name": "Tech Innovators Summit",
+    "date": "2024-08-15",
+    "location": "San Francisco",
+    "description": "A summit showcasing cutting-edge technological innovations.",
+    "organizer": "Tech World"
+  },
+  {
+    "id": "7",
+    "name": "Masters of Cuisine Gala",
+    "date": "2024-09-01",
+    "location": "Seattle",
+    "description": "A gala event featuring world-renowned chefs.",
+    "organizer": "Gourmet Society"
+  },
+  {
+    "id": "8",
+    "name": "Art in the Park",
+    "date": "2024-09-15",
+    "location": "Boston",
+    "description": "An outdoor artistic experience featuring world-famous artworks.",
+    "organizer": "Boston Art Association"
+  },
+  {
+    "id": "9",
+    "name": "Urban Fashion Festival",
+    "date": "2024-10-01",
+    "location": "Denver",
+    "description": "A celebration of urban fashion and street style.",
+    "organizer": "Metropolitan Fashion"
+  },
+  {
+    "id": "10",
+    "name": "Renewable Energy Conference",
+    "date": "2024-10-15",
+    "location": "Washington DC",
+    "description": "A conference focusing on renewable energies and sustainability.",
+    "organizer": "Clean Energy America"
+  },
+  {
+    "id": "11",
+    "name": "Mental Wellness Seminar",
+    "date": "2024-11-01",
+    "location": "Las Vegas",
+    "description": "A seminar promoting mental wellness and emotional health.",
+    "organizer": "Balanced Mind"
+  },
+  {
+    "id": "12",
+    "name": "Contemporary Art Exhibition",
+    "date": "2024-11-15",
+    "location": "Phoenix",
+    "description": "An exhibition of contemporary art pieces from emerging artists.",
+    "organizer": "Phoenix Modern Art"
+  }
+]
+
+/api/ids :
+
+{
+  "userId": 125
+}
+
+/api/eventInfo
+
+[
+  {
+    "eventId": "1",
+    "eventName": "Aurora Music Festival",
+    "partecipanti": 20
+  },
+  {
+    "eventId": "2",
+    "eventName": "Galactic Science Exhibition",
+    "partecipanti": 30
+  },
+  {
+    "eventId": "3",
+    "eventName": "Vintage Car Show",
+    "partecipanti": 20
+  },
+  {
+    "eventId": "4",
+    "eventName": "Tropical Food Fair",
+    "partecipanti": 42
+  },
+  {
+    "eventId": "5",
+    "eventName": "Ocean Conservation Conference",
+    "partecipanti": 30
+  },
+  {
+    "eventId": "6",
+    "eventName": "Tech Innovators Summit",
+    "partecipanti": 71
+  },
+  {
+    "eventId": "7",
+    "eventName": "Masters of Cuisine Gala",
+    "partecipanti": 31
+  },
+  {
+    "eventId": "8",
+    "eventName": "Art in the Park",
+    "partecipanti": 50
+  },
+  {
+    "eventId": "9",
+    "eventName": "Urban Fashion Festival",
+    "partecipanti": 84
+  },
+  {
+    "eventId": "10",
+    "eventName": "Renewable Energy Conference",
+    "partecipanti": 43
+  },
+  {
+    "eventId": "11",
+    "eventName": "Mental Wellness Seminar",
+    "partecipanti": 47
+  },
+  {
+    "eventId": "12",
+    "eventName": "Contemporary Art Exhibition",
+    "partecipanti": 30
+  }
+]
+
+/api/partecipanti :
+
+[
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Regno Unito",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Francia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Spagna",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Regno Unito",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Francia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Spagna",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Regno Unito",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Francia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Spagna",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Regno Unito",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Francia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Spagna",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Regno Unito",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Francia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Spagna",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Francia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Spagna",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Regno Unito",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Germania",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Francia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Spagna",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Spagna",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Spagna",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "USA",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  },
+  {
+    "nation": "Italia",
+    "sex": true
+  },
+  {
+    "nation": "Italia",
+    "sex": false
+  }
+]
